@@ -1,55 +1,10 @@
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf } from '@kadira/storybook';
 import Select from './Select';
+import { Groups, Apps, People, StatusLabels, Categories, Types, Tags } from '../../data/SelectItems';
 
-const handleUpdate = (value) => console.log('🐳', value);
+const handleUpdate = (value) => console.log('🐳', value); // eslint-disable-line no-console
 
-const Groups = [
-  { label: 'Speakers', value: 'speakers' },
-  { label: 'Attendies', value: 'attendies' },
-  { label: 'Moderators', value: 'moderators' },
-];
-
-const Apps = [
-  { label: 'Aci', value: 'id1', image: 'http://imgur.com/N2LoYmv.png' },
-  { label: 'NCS', value: 'id2', image: 'http://imgur.com/AN63ghL.png' },
-  { label: 'IPE', value: 'id3', image: 'http://imgur.com/VMgTYTR.png' },
-];
-
-const People = [
-  { label: 'Jane Sanders', value: 'id1', image: 'https://randomuser.me/api/portraits/women/50.jpg' },
-  { label: 'Linda Garland', value: 'id2', image: 'https://randomuser.me/api/portraits/women/18.jpg' },
-  { label: 'Jane Offline', value: 'id1', image: 'https://randomuser.me/api/portraits/women/50.jpg', localImg: 'ktLb8Hqxo28WdToq5.jpg' },
-  { label: 'No image', value: 'id3', image: '' },
-];
-
-const StatusLabels = [
-  { label: 'Published', value: 'published', color: 'action' },
-  { label: 'Rejected', value: 'rejected', color: 'critical' },
-  { label: 'Pending', value: 'pending', color: 'warning' },
-];
-
-const Categories = [
-  { label: 'Sessions', value: 'session', color: '#3598D8' },
-  { label: 'Breaks', value: 'break', color: '#2CAF65' },
-  { label: 'Workshops', value: 'workshop', color: '#F29C2F' },
-];
-
-const Types = [
-  { label: 'User', value: 'Tickets', icon: 'users2', iconColor: '#3498DB' },
-  { label: 'Session', value: 'Sessions', icon: 'calendar-text', iconColor: '#3498DB' },
-  { label: 'Sponsors & Exhibitors', value: 'Sponsors', icon: 'diamond4', iconColor: '#3498DB' },
-  { label: 'General', value: 'all', icon: 'pencil3', iconColor: '#3498DB' },
-];
-
-const Tags = [
-  { label: 'welcome', value: 'welcome' },
-  { label: 'announcement', value: 'announcement' },
-  { label: 'warning', value: 'warning' },
-  { label: 'important', value: 'important' },
-  { label: 'reminder', value: 'reminder' },
-  { label: 'other', value: 'other' },
-];
 
 storiesOf('Select', module)
   .add('single', () => (
@@ -98,6 +53,15 @@ storiesOf('Select', module)
       type={'colored'}
     />
   ))
+  .add('type: colored - selected', () => (
+    <Select
+      value={'published'}
+      options={StatusLabels}
+      onUpdate={handleUpdate}
+      placeholder={'Filter by status'}
+      type={'colored'}
+    />
+  ))
   .add('type: colored multi', () => (
     <Select
       options={StatusLabels}
@@ -116,6 +80,15 @@ storiesOf('Select', module)
       type={'colored-circle'}
     />
   ))
+  .add('type: colored-circle - selected', () => (
+    <Select
+      value={'session'}
+      options={Categories}
+      onUpdate={handleUpdate}
+      placeholder={'Filter by category'}
+      type={'colored-circle'}
+    />
+  ))
   .add('type: colored-circle multi', () => (
     <Select
       options={Categories}
@@ -128,6 +101,15 @@ storiesOf('Select', module)
   ))
   .add('type: image', () => (
     <Select
+      options={Apps}
+      onUpdate={handleUpdate}
+      placeholder={'Select app'}
+      type={'image'}
+    />
+  ))
+  .add('type: image - selected', () => (
+    <Select
+      value={'id2'}
       options={Apps}
       onUpdate={handleUpdate}
       placeholder={'Select app'}
@@ -168,6 +150,15 @@ storiesOf('Select', module)
   ))
   .add('type: icon', () => (
     <Select
+      options={Types}
+      onUpdate={handleUpdate}
+      placeholder={'Filter by note type'}
+      type={'icon'}
+    />
+  ))
+  .add('type: icon - selected', () => (
+    <Select
+      value={'Tickets'}
       options={Types}
       onUpdate={handleUpdate}
       placeholder={'Filter by note type'}

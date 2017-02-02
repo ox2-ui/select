@@ -47,6 +47,10 @@ class Select extends Component {
      */
     iconSize: PropTypes.string,
     /**
+     * If set to True enables multi select component
+     */
+    multi: PropTypes.bool,
+    /**
      * Enables offline image check for 'image' type
      */
     offlineEnabled: PropTypes.bool,
