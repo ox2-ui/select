@@ -6,8 +6,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
-## 2.0.1 - 2016-12-06
+## 3.0.0 - 2017-02-02
+### Changed
+- [Select] BREAKING: use styled components for style overrides instead of `index.css` import
+- [npm] cleanup package structure and scripts
+- [npm] updated dependencies
+
 ### Added
+- [npm] added docs templates
+- [tests] added Jest snapshot testing
+
+## 2.0.1 - 2016-12-06
+### Changed
 - [npm] updated dependencies
 
 
