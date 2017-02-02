@@ -1,3 +1,215 @@
-### Select
 
-    <Select/>
+### Basic -- Single
+
+    const Groups = [
+      { label: 'Speakers', value: 'speakers' },
+      { label: 'Attendies', value: 'attendies' },
+      { label: 'Moderators', value: 'moderators' },
+    ];
+
+    const handleUpdate = (value) => console.log('🐳', value);
+
+    <Select
+      options={Groups}
+      onUpdate={handleUpdate}
+      placeholder={'Select something'}
+    />
+
+### Basic -- Multi
+
+    const Groups = [
+      { label: 'Speakers', value: 'speakers' },
+      { label: 'Attendies', value: 'attendies' },
+      { label: 'Moderators', value: 'moderators' },
+    ];
+
+    const handleUpdate = (value) => console.log('🐳', value);
+
+    <Select
+      options={Groups}
+      onUpdate={handleUpdate}
+      placeholder={'Select something'}
+      multi={true}
+      simpleValue={true}
+    />
+
+### No clear button
+
+    const Groups = [
+      { label: 'Speakers', value: 'speakers' },
+      { label: 'Attendies', value: 'attendies' },
+      { label: 'Moderators', value: 'moderators' },
+    ];
+
+    const handleUpdate = (value) => console.log('🐳', value);
+
+    <Select
+      value={'attendies'}
+      options={Groups}
+      onUpdate={handleUpdate}
+      clearable={false}
+    />
+
+### Type: colored -- Single
+
+    const StatusLabels = [
+      { label: 'Published', value: 'published', color: 'action' },
+      { label: 'Rejected', value: 'rejected', color: 'critical' },
+      { label: 'Pending', value: 'pending', color: 'warning' },
+    ];
+
+    const handleUpdate = (value) => console.log('🐳', value);
+
+    <Select
+      options={StatusLabels}
+      onUpdate={handleUpdate}
+      placeholder={'Filter by status'}
+      type={'colored'}
+    />
+
+### Type: colored -- Multi
+
+    const StatusLabels = [
+      { label: 'Published', value: 'published', color: 'action' },
+      { label: 'Rejected', value: 'rejected', color: 'critical' },
+      { label: 'Pending', value: 'pending', color: 'warning' },
+    ];
+
+    const handleUpdate = (value) => console.log('🐳', value);
+
+    <Select
+      options={StatusLabels}
+      onUpdate={handleUpdate}
+      placeholder={'Filter by status'}
+      type={'colored'}
+      multi={true}
+      simpleValue={true}
+    />
+
+### Type: colored-circle -- Single
+
+    const Categories = [
+      { label: 'Sessions', value: 'session', color: '#3598D8' },
+      { label: 'Breaks', value: 'break', color: '#2CAF65' },
+      { label: 'Workshops', value: 'workshop', color: '#F29C2F' },
+    ];
+
+    const handleUpdate = (value) => console.log('🐳', value);
+
+    <Select
+      options={Categories}
+      onUpdate={handleUpdate}
+      placeholder={'Filter by category'}
+      type={'colored-circle'}
+    />
+
+### Type: colored-circle -- Multi
+
+    const Categories = [
+      { label: 'Sessions', value: 'session', color: '#3598D8' },
+      { label: 'Breaks', value: 'break', color: '#2CAF65' },
+      { label: 'Workshops', value: 'workshop', color: '#F29C2F' },
+    ];
+
+    const handleUpdate = (value) => console.log('🐳', value);
+
+    <Select
+      options={Categories}
+      onUpdate={handleUpdate}
+      placeholder={'Filter by category'}
+      type={'colored-circle'}
+      multi={true}
+      simpleValue={true}
+    />
+
+### Type: image -- Single
+
+    const Apps = [
+      { label: 'Aci', value: 'id1', image: 'http://imgur.com/N2LoYmv.png' },
+      { label: 'NCS', value: 'id2', image: 'http://imgur.com/AN63ghL.png' },
+      { label: 'IPE', value: 'id3', image: 'http://imgur.com/VMgTYTR.png' },
+    ];
+
+    const handleUpdate = (value) => console.log('🐳', value);
+
+    <Select
+      options={Apps}
+      onUpdate={handleUpdate}
+      placeholder={'Select app'}
+      type={'image'}
+    />
+
+### Type: image -- Multi
+
+    const Apps = [
+      { label: 'Aci', value: 'id1', image: 'http://imgur.com/N2LoYmv.png' },
+      { label: 'NCS', value: 'id2', image: 'http://imgur.com/AN63ghL.png' },
+      { label: 'IPE', value: 'id3', image: 'http://imgur.com/VMgTYTR.png' },
+    ];
+
+    const handleUpdate = (value) => console.log('🐳', value);
+
+    <Select
+      options={Apps}
+      onUpdate={handleUpdate}
+      placeholder={'Select app'}
+      type={'image'}
+      multi={true}
+      simpleValue={true}
+    />
+
+### Type: icon -- Single
+
+    const Types = [
+      { label: 'User', value: 'Tickets', icon: 'users2', iconColor: '#3498DB' },
+      { label: 'Session', value: 'Sessions', icon: 'calendar-text', iconColor: '#3498DB' },
+      { label: 'Sponsors & Exhibitors', value: 'Sponsors', icon: 'diamond4', iconColor: '#3498DB' },
+      { label: 'General', value: 'all', icon: 'pencil3', iconColor: '#3498DB' },
+    ];
+
+    const handleUpdate = (value) => console.log('🐳', value);
+
+    <Select
+      options={Types}
+      onUpdate={handleUpdate}
+      placeholder={'Filter by note type'}
+      type={'icon'}
+    />
+
+### Type: icon -- Multi
+
+    const Types = [
+      { label: 'User', value: 'Tickets', icon: 'users2', iconColor: '#3498DB' },
+      { label: 'Session', value: 'Sessions', icon: 'calendar-text', iconColor: '#3498DB' },
+      { label: 'General', value: 'all', icon: 'pencil3', iconColor: '#3498DB' },
+    ];
+
+    const handleUpdate = (value) => console.log('🐳', value);
+
+    <Select
+      options={Types}
+      onUpdate={handleUpdate}
+      placeholder={'Filter by note type'}
+      type={'icon'}
+      multi={true}
+      simpleValue={true}
+    />
+
+### Type: icon -- Large icon
+
+    const Types = [
+      { label: 'User', value: 'Tickets', icon: 'users2', iconColor: '#3498DB' },
+      { label: 'Session', value: 'Sessions', icon: 'calendar-text', iconColor: '#3498DB' },
+      { label: 'Sponsors & Exhibitors', value: 'Sponsors', icon: 'diamond4', iconColor: '#3498DB' },
+      { label: 'General', value: 'all', icon: 'pencil3', iconColor: '#3498DB' },
+    ];
+
+    const handleUpdate = (value) => console.log('🐳', value);
+
+    <Select
+      options={Types}
+      onUpdate={handleUpdate}
+      placeholder={'Filter by note type'}
+      type={'icon'}
+      iconSize={'25px'}
+    />

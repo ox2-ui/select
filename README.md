@@ -6,9 +6,9 @@ Wrapper components of `react-select` package.
 
 ## Features
 
-* **Feature A.** Description.
-* **Feature B.** Description.
-* **etc.** ...
+* **Premade types** Have premade styled types for quick usage.
+* **Images and Icons** Premade `type` to support image and icon select items.
+* **Colors** Premade `type` to support colored text or label `select items
 
 ## Installation
 Install using [npm](http://npmjs.com):
@@ -22,10 +22,14 @@ yarn add @ox2/select
 
 ## Usage
 ```js
-import Component from '@ox2/select/Component';
+import Select from '@ox2/select/Select';
 
-const handleChange = (value) => console.log('👾👾', value);
+const handleUpdate = (value) => console.log('👾👾', value);
 
+<Select
+  options={myItems}
+  onUpdate={handleUpdate}
+/>
 
 ```
 

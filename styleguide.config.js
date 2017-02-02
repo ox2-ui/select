@@ -13,8 +13,20 @@ module.exports = {
         include: path.join(__dirname, 'src'),
         exclude: /node_modules/,
         loader: 'babel',
+      },
+      {
+        test: /\.css$/,
+        include: path.join(__dirname, './node_modules/react-select'),
+        loaders: ['style', 'css'],
+      },
+      {
+        test: /\.css$/,
+        include: path.join(__dirname, './node_modules/@tapfuse'),
+        loaders: ['style', 'css'],
       }
     );
+    webpackConfig.entry.push(path.join(__dirname, 'node_modules/react-select/dist/react-select.css'));
+    webpackConfig.entry.push(path.join(__dirname, 'node_modules/@tapfuse/css-icons-linear/index.css'));
     return webpackConfig;
   },
   sections: [

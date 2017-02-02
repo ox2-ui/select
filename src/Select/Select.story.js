@@ -23,25 +23,25 @@ storiesOf('Select', module)
   .add('multi', () => (
     <Select
       options={Tags}
+      onUpdate={handleUpdate}
       multi={true}
       simpleValue={true}
-      onUpdate={handleUpdate}
     />
   ))
   .add('multi selected', () => (
     <Select
       options={Tags}
-      value={['important', 'warning']}
+      onUpdate={handleUpdate}
       multi={true}
       simpleValue={true}
-      onUpdate={handleUpdate}
+      value={['important', 'warning']}
     />
   ))
   .add('disable clear', () => (
     <Select
-      value={'attendies'}
       options={Groups}
       onUpdate={handleUpdate}
+      value={'attendies'}
       clearable={false}
     />
   ))
@@ -55,21 +55,21 @@ storiesOf('Select', module)
   ))
   .add('type: colored - selected', () => (
     <Select
-      value={'published'}
       options={StatusLabels}
       onUpdate={handleUpdate}
       placeholder={'Filter by status'}
       type={'colored'}
+      value={'published'}
     />
   ))
   .add('type: colored multi', () => (
     <Select
       options={StatusLabels}
-      multi={true}
-      simpleValue={true}
       onUpdate={handleUpdate}
       placeholder={'Filter by status'}
       type={'colored'}
+      multi={true}
+      simpleValue={true}
     />
   ))
   .add('type: colored-circle', () => (
@@ -82,21 +82,21 @@ storiesOf('Select', module)
   ))
   .add('type: colored-circle - selected', () => (
     <Select
-      value={'session'}
       options={Categories}
       onUpdate={handleUpdate}
       placeholder={'Filter by category'}
       type={'colored-circle'}
+      value={'session'}
     />
   ))
   .add('type: colored-circle multi', () => (
     <Select
       options={Categories}
-      multi={true}
-      simpleValue={true}
       onUpdate={handleUpdate}
       placeholder={'Filter by category'}
       type={'colored-circle'}
+      multi={true}
+      simpleValue={true}
     />
   ))
   .add('type: image', () => (
@@ -140,12 +140,12 @@ storiesOf('Select', module)
     <Select
       options={People}
       onUpdate={handleUpdate}
-      multi={true}
-      simpleValue={true}
       placeholder={'Select person'}
       offlineEnabled={true}
       type={'image'}
       fallbackIcon={'user'}
+      multi={true}
+      simpleValue={true}
     />
   ))
   .add('type: icon', () => (
@@ -169,10 +169,10 @@ storiesOf('Select', module)
     <Select
       options={Types}
       onUpdate={handleUpdate}
-      multi={true}
-      simpleValue={true}
       placeholder={'Filter by note type'}
       type={'icon'}
+      multi={true}
+      simpleValue={true}
     />
   ))
   .add('type: icon & large', () => (
