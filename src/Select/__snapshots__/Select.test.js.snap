@@ -4,17 +4,17 @@ exports[`test renders colored type 1`] = `
   options={
     Array [
       Object {
-        "color": "action",
+        "color": "#28af60",
         "label": "Published",
         "value": "published",
       },
       Object {
-        "color": "critical",
+        "color": "#bf3a2b",
         "label": "Rejected",
         "value": "rejected",
       },
       Object {
-        "color": "warning",
+        "color": "#f39c12",
         "label": "Pending",
         "value": "pending",
       },
@@ -30,17 +30,17 @@ exports[`test renders colored type 1`] = `
     options={
       Array [
         Object {
-          "color": "action",
+          "color": "#28af60",
           "label": "Published",
           "value": "published",
         },
         Object {
-          "color": "critical",
+          "color": "#bf3a2b",
           "label": "Rejected",
           "value": "rejected",
         },
         Object {
-          "color": "warning",
+          "color": "#f39c12",
           "label": "Pending",
           "value": "pending",
         },
@@ -87,17 +87,17 @@ exports[`test renders colored type 1`] = `
       options={
         Array [
           Object {
-            "color": "action",
+            "color": "#28af60",
             "label": "Published",
             "value": "published",
           },
           Object {
-            "color": "critical",
+            "color": "#bf3a2b",
             "label": "Rejected",
             "value": "rejected",
           },
           Object {
-            "color": "warning",
+            "color": "#f39c12",
             "label": "Pending",
             "value": "pending",
           },
@@ -133,7 +133,7 @@ exports[`test renders colored type 1`] = `
               onClick={null}
               value={
                 Object {
-                  "color": "action",
+                  "color": "#28af60",
                   "label": "Published",
                   "value": "published",
                 }
@@ -154,9 +154,9 @@ exports[`test renders colored type 1`] = `
                       }
                     }>
                     <div
-                      className="text-color:action"
                       style={
                         Object {
+                          "color": "#28af60",
                           "fontSize": "16px",
                         }
                       }>

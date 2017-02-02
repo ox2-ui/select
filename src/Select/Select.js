@@ -129,7 +129,7 @@ class Select extends Component {
   renderColored = (option) => {
     return (
       <div style={styles.itemWrapper}>
-        <div style={styles.labelTextOnly} className={`text-color:${option.color}`}>
+        <div style={{...{color: option.color}, ...styles.labelTextOnly}}>
           {option.label}
         </div>
       </div>

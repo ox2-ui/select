@@ -53,9 +53,9 @@
 ### Type: colored -- Single
 
     const StatusLabels = [
-      { label: 'Published', value: 'published', color: 'action' },
-      { label: 'Rejected', value: 'rejected', color: 'critical' },
-      { label: 'Pending', value: 'pending', color: 'warning' },
+      { label: 'Published', value: 'published', color: '#28af60' },
+      { label: 'Rejected', value: 'rejected', color: '#bf3a2b' },
+      { label: 'Pending', value: 'pending', color: '#f39c12' },
     ];
 
     const handleUpdate = (value) => console.log('🐳', value);
@@ -70,9 +70,9 @@
 ### Type: colored -- Multi
 
     const StatusLabels = [
-      { label: 'Published', value: 'published', color: 'action' },
-      { label: 'Rejected', value: 'rejected', color: 'critical' },
-      { label: 'Pending', value: 'pending', color: 'warning' },
+      { label: 'Published', value: 'published', color: '#28af60' },
+      { label: 'Rejected', value: 'rejected', color: '#bf3a2b' },
+      { label: 'Pending', value: 'pending', color: '#f39c12' },
     ];
 
     const handleUpdate = (value) => console.log('🐳', value);
