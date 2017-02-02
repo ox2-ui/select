@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## 4.0.0 - 2017-02-02
+### Changed
+- [Select] BREAKING: `colored` type now accepts css color value instead of theme variable names.
+
+### Added
+- [docs] new docs page.
+
 ## 3.0.0 - 2017-02-02
 ### Changed
 - [Select] BREAKING: use styled components for style overrides instead of `index.css` import

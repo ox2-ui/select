@@ -1,6 +1,6 @@
 {
   "name": "@ox2/select",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Wrapper components of react-select package.",
   "repository": {
     "type": "git",
