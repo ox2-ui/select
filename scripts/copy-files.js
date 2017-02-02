@@ -6,7 +6,6 @@ const files = [
   'README.md',
   'CHANGELOG.md',
   'LICENSE',
-  'src/index.css',
 ];
 
 Promise.all(

@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import ReactSelect from 'react-select';
 import Icon from '@ox2/icon/Icon';
 import Thumb from '@ox2/ui/Thumb';
+import styled from 'styled-components';
 
 const styles = {
   circle: {
@@ -28,6 +29,16 @@ const styles = {
     fontFamily: 'Roboto Condensed',
   },
 };
+
+const StyledSelect = styled(ReactSelect)`
+  &.Select--multi .Select-value {
+    margin-top: 3px;
+  }
+
+  &.Select--multi .Select-value-label {
+    display: inline-flex;
+  }
+`;
 
 /**
  * Select Component
@@ -191,7 +202,7 @@ class Select extends Component {
     switch (type) {
       case 'colored':
         select = (
-          <ReactSelect
+          <StyledSelect
             {...other}
             value={this.state.value}
             onChange={this.handleSelectChange}
@@ -202,7 +213,7 @@ class Select extends Component {
         break;
       case 'colored-circle':
         select = (
-          <ReactSelect
+          <StyledSelect
             {...other}
             value={this.state.value}
             onChange={this.handleSelectChange}
@@ -213,7 +224,7 @@ class Select extends Component {
         break;
       case 'icon':
         select = (
-          <ReactSelect
+          <StyledSelect
             {...other}
             value={this.state.value}
             onChange={this.handleSelectChange}
@@ -224,7 +235,7 @@ class Select extends Component {
         break;
       case 'image':
         select = (
-          <ReactSelect
+          <StyledSelect
             {...other}
             value={this.state.value}
             onChange={this.handleSelectChange}
@@ -235,7 +246,7 @@ class Select extends Component {
         break;
       default:
         select = (
-          <ReactSelect
+          <StyledSelect
             {...other}
             value={this.state.value}
             onChange={this.handleSelectChange}

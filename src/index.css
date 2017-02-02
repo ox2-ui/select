@@ -1,9 +1,0 @@
-/*React-select styles overrides*/
-
-.Select--multi .Select-value {
-  margin-top: 3px;
-}
-
-.Select--multi .Select-value-label {
-  display: inline-flex;
-}
