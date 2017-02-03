@@ -31,6 +31,9 @@ const styles = {
 };
 
 const StyledSelect = styled(ReactSelect)`
+  font-family: Roboto Condensed;
+  font-size: 15px;
+
   &.Select--multi .Select-value {
     margin-top: 2px;
   }
