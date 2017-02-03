@@ -55,7 +55,7 @@ exports[`test renders colored type 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="gCmWwW"
+      className="jflAWQ"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -115,7 +115,7 @@ exports[`test renders colored type 1`] = `
       valueKey="value"
       valueRenderer={[Function]}>
       <div
-        className="Select gCmWwW Select--single is-searchable has-value">
+        className="Select jflAWQ Select--single is-searchable has-value">
         <div
           className="Select-control"
           onKeyDown={[Function]}
@@ -305,7 +305,7 @@ exports[`test renders colored-circle type 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="gCmWwW"
+      className="jflAWQ"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -365,7 +365,7 @@ exports[`test renders colored-circle type 1`] = `
       valueKey="value"
       valueRenderer={[Function]}>
       <div
-        className="Select gCmWwW Select--single is-searchable has-value">
+        className="Select jflAWQ Select--single is-searchable has-value">
         <div
           className="Select-control"
           onKeyDown={[Function]}
@@ -556,7 +556,7 @@ exports[`test renders correctly 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="gCmWwW"
+      className="jflAWQ"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -613,7 +613,7 @@ exports[`test renders correctly 1`] = `
       valueKey="value"
       valueRenderer={[Function]}>
       <div
-        className="Select gCmWwW Select--single is-searchable">
+        className="Select jflAWQ Select--single is-searchable">
         <div
           className="Select-control"
           onKeyDown={[Function]}
@@ -769,7 +769,7 @@ exports[`test renders icon type 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="gCmWwW"
+      className="jflAWQ"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -838,7 +838,7 @@ exports[`test renders icon type 1`] = `
       valueKey="value"
       valueRenderer={[Function]}>
       <div
-        className="Select gCmWwW Select--single is-searchable has-value">
+        className="Select jflAWQ Select--single is-searchable has-value">
         <div
           className="Select-control"
           onKeyDown={[Function]}
@@ -1042,7 +1042,7 @@ exports[`test renders image type 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="gCmWwW"
+      className="jflAWQ"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -1102,7 +1102,7 @@ exports[`test renders image type 1`] = `
       valueKey="value"
       valueRenderer={[Function]}>
       <div
-        className="Select gCmWwW Select--single is-searchable has-value">
+        className="Select jflAWQ Select--single is-searchable has-value">
         <div
           className="Select-control"
           onKeyDown={[Function]}
@@ -1340,7 +1340,7 @@ exports[`test renders multi selected 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="gCmWwW"
+      className="jflAWQ"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -1414,7 +1414,7 @@ exports[`test renders multi selected 1`] = `
       valueKey="value"
       valueRenderer={[Function]}>
       <div
-        className="Select gCmWwW Select--multi is-searchable has-value">
+        className="Select jflAWQ Select--multi is-searchable has-value">
         <div
           className="Select-control"
           onKeyDown={[Function]}

@@ -32,11 +32,14 @@ const styles = {
 
 const StyledSelect = styled(ReactSelect)`
   &.Select--multi .Select-value {
-    margin-top: 3px;
+    margin-top: 2px;
   }
 
   &.Select--multi .Select-value-label {
     display: inline-flex;
+  }
+  .Select-input, .Select-control {
+    height: 32px;
   }
 `;
 
