@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## 4.1.1 - 2017-02-03
+### Changed
+- [Select] Reduce font size
+- [Select] Add roboto condensed font
+
 ## 4.1.0 - 2017-02-03
 ### Changed
 - [Select] reduce height to 32px.
