@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## 4.1.0 - 2017-02-03
+### Changed
+- [Select] reduce height to 32px.
+
 ## 4.0.0 - 2017-02-02
 ### Changed
 - [Select] BREAKING: `colored` type now accepts css color value instead of theme variable names.
