@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## 4.1.2 - 2017-02-04
+### Changed
+- [Select] Fix issue where single select returned null when deselected instead of empty string.
+
 ## 4.1.1 - 2017-02-03
 ### Changed
 - [Select] Reduce font size
