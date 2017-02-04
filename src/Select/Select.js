@@ -113,7 +113,7 @@ class Select extends Component {
       if (this.props.multi) {
         this.props.onUpdate(value ? value.split(',') : []);
       } else {
-        this.props.onUpdate(value ? value.value : null);
+        this.props.onUpdate(value ? value.value : '');
       }
     }
     this.setState({ value });
