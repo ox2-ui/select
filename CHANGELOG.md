@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## 4.2.0 - 2017-02-24
+### Changed
+- [SelectField] new component added
+- [Select] New focus color
+- [Select] Remove focus glow
+
+
 ## 4.1.2 - 2017-02-04
 ### Changed
 - [Select] Fix issue where single select returned null when deselected instead of empty string.
