@@ -48,6 +48,10 @@ const StyledSelect = styled(ReactSelect)`
     border-color: hsla(0, 0%, 30%, 1);
     box-shadow: none;
   }
+
+  .Select-menu-outer {
+    z-index: 5;
+  }
 `;
 
 /**
