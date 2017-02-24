@@ -44,6 +44,10 @@ const StyledSelect = styled(ReactSelect)`
   .Select-input, .Select-control {
     height: 32px;
   }
+  &.is-focused:not(.is-open) > .Select-control {
+    border-color: hsla(0, 0%, 30%, 1);
+    box-shadow: none;
+  }
 `;
 
 /**
