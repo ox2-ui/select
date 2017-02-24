@@ -1,0 +1,205 @@
+exports[`test renders correctly 1`] = `
+<Styled(Select)
+  onUpdate={[Function]}
+  options={
+    Array [
+      Object {
+        "label": "Speakers",
+        "value": "speakers",
+      },
+      Object {
+        "label": "Attendies",
+        "value": "attendies",
+      },
+      Object {
+        "label": "Moderators",
+        "value": "moderators",
+      },
+    ]
+  }>
+  <Select
+    className="eHKbKP"
+    onUpdate={[Function]}
+    options={
+      Array [
+        Object {
+          "label": "Speakers",
+          "value": "speakers",
+        },
+        Object {
+          "label": "Attendies",
+          "value": "attendies",
+        },
+        Object {
+          "label": "Moderators",
+          "value": "moderators",
+        },
+      ]
+    }>
+    <Styled(Select)
+      className="eHKbKP"
+      onChange={[Function]}
+      onUpdate={[Function]}
+      optionRenderer={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "Speakers",
+            "value": "speakers",
+          },
+          Object {
+            "label": "Attendies",
+            "value": "attendies",
+          },
+          Object {
+            "label": "Moderators",
+            "value": "moderators",
+          },
+        ]
+      }
+      value=""
+      valueRenderer={[Function]}>
+      <Select
+        addLabelText="Add \"{label}\"?"
+        arrowRenderer={[Function]}
+        autosize={true}
+        backspaceRemoves={true}
+        backspaceToRemoveMessage="Press backspace to remove {label}"
+        className="eHKbKP cUiwYK"
+        clearAllText="Clear all"
+        clearRenderer={[Function]}
+        clearValueText="Clear value"
+        clearable={true}
+        deleteRemoves={true}
+        delimiter=","
+        disabled={false}
+        escapeClearsValue={true}
+        filterOptions={[Function]}
+        ignoreAccents={true}
+        ignoreCase={true}
+        inputProps={Object {}}
+        isLoading={false}
+        joinValues={false}
+        labelKey="label"
+        matchPos="any"
+        matchProp="any"
+        menuBuffer={0}
+        menuRenderer={[Function]}
+        multi={false}
+        noResultsText="No results found"
+        onBlurResetsInput={true}
+        onChange={[Function]}
+        onCloseResetsInput={true}
+        onUpdate={[Function]}
+        openAfterFocus={false}
+        optionComponent={[Function]}
+        optionRenderer={[Function]}
+        options={
+          Array [
+            Object {
+              "label": "Speakers",
+              "value": "speakers",
+            },
+            Object {
+              "label": "Attendies",
+              "value": "attendies",
+            },
+            Object {
+              "label": "Moderators",
+              "value": "moderators",
+            },
+          ]
+        }
+        pageSize={5}
+        placeholder="Select..."
+        required={false}
+        scrollMenuIntoView={true}
+        searchable={true}
+        simpleValue={false}
+        tabSelectsValue={true}
+        value=""
+        valueComponent={[Function]}
+        valueKey="value"
+        valueRenderer={[Function]}>
+        <div
+          className="Select eHKbKP cUiwYK Select--single is-searchable">
+          <div
+            className="Select-control"
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}>
+            <span
+              className="Select-multi-value-wrapper"
+              id="react-select-2--value">
+              <div
+                className="Select-placeholder">
+                Select...
+              </div>
+              <AutosizeInput
+                aria-activedescendant="react-select-2--value"
+                aria-expanded="false"
+                aria-haspopup="false"
+                aria-owns=""
+                className="Select-input"
+                minWidth="5"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                required={false}
+                role="combobox"
+                value="">
+                <div
+                  className="Select-input"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                    }
+                  }>
+                  <input
+                    aria-activedescendant="react-select-2--value"
+                    aria-expanded="false"
+                    aria-haspopup="false"
+                    aria-owns=""
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    required={false}
+                    role="combobox"
+                    style={
+                      Object {
+                        "boxSizing": "content-box",
+                        "width": "5px",
+                      }
+                    }
+                    value="" />
+                  <div
+                    style={
+                      Object {
+                        "height": 0,
+                        "left": 0,
+                        "overflow": "scroll",
+                        "position": "absolute",
+                        "top": 0,
+                        "visibility": "hidden",
+                        "whiteSpace": "pre",
+                      }
+                    } />
+                </div>
+              </AutosizeInput>
+            </span>
+            <span
+              className="Select-arrow-zone"
+              onMouseDown={[Function]}>
+              <span
+                className="Select-arrow"
+                onMouseDown={[Function]} />
+            </span>
+          </div>
+        </div>
+      </Select>
+    </Styled(Select)>
+  </Select>
+</Styled(Select)>
+`;
