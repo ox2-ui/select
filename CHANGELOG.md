@@ -5,6 +5,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
+## 4.2.2 - 2017-02-25
+### Changed
+- [SelectField] fix multi select value alignment
+
+## 4.2.1 - 2017-02-24
+### Changed
+- [Select] increase dropdown menu z-index
 
 ## 4.2.0 - 2017-02-24
 ### Changed
