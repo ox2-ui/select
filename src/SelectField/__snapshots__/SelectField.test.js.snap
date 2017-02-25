@@ -18,7 +18,7 @@ exports[`test renders correctly 1`] = `
     ]
   }>
   <Select
-    className="boQsxg"
+    className="ccIWcp"
     onUpdate={[Function]}
     options={
       Array [
@@ -37,7 +37,7 @@ exports[`test renders correctly 1`] = `
       ]
     }>
     <Styled(Select)
-      className="boQsxg"
+      className="ccIWcp"
       onChange={[Function]}
       onUpdate={[Function]}
       optionRenderer={[Function]}
@@ -65,7 +65,7 @@ exports[`test renders correctly 1`] = `
         autosize={true}
         backspaceRemoves={true}
         backspaceToRemoveMessage="Press backspace to remove {label}"
-        className="boQsxg fUPKPg"
+        className="ccIWcp fUPKPg"
         clearAllText="Clear all"
         clearRenderer={[Function]}
         clearValueText="Clear value"
@@ -122,7 +122,7 @@ exports[`test renders correctly 1`] = `
         valueKey="value"
         valueRenderer={[Function]}>
         <div
-          className="Select boQsxg fUPKPg Select--single is-searchable">
+          className="Select ccIWcp fUPKPg Select--single is-searchable">
           <div
             className="Select-control"
             onKeyDown={[Function]}

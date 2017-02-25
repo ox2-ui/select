@@ -18,7 +18,6 @@ const SelectField = styled(Select)`
 
   &.is-focused:not(.is-open) > .Select-control {
     border-color: hsla(214, 70%, 53%, 1);
-    border-bottom-width: 2px;
     box-shadow: none;
   }
 
