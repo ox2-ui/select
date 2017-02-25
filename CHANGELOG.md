@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
+
+## 4.2.3 - 2017-02-25
+### Changed
+- [SelectField] reduce focused border width
+
 ## 4.2.2 - 2017-02-25
 ### Changed
 - [SelectField] fix multi select value alignment
