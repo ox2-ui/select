@@ -21,6 +21,11 @@ const SelectField = styled(Select)`
     border-bottom-width: 2px;
     box-shadow: none;
   }
+
+  &.Select--multi .Select-value {
+    margin-left: 0;
+    margin-right: 5px;
+  }
 `;
 
 export default SelectField;
