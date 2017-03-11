@@ -1,4 +1,6 @@
-exports[`test renders colored type 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders colored type 1`] = `
 <Select
   onUpdate={[Function]}
   options={
@@ -22,7 +24,8 @@ exports[`test renders colored type 1`] = `
   }
   placeholder="Filter by status"
   type="colored"
-  value="published">
+  value="published"
+>
   <Styled(Select)
     onChange={[Function]}
     onUpdate={[Function]}
@@ -48,9 +51,10 @@ exports[`test renders colored type 1`] = `
     }
     placeholder="Filter by status"
     value="published"
-    valueRenderer={[Function]}>
+    valueRenderer={[Function]}
+  >
     <Select
-      addLabelText="Add \"{label}\"?"
+      addLabelText="Add \\"{label}\\"?"
       arrowRenderer={[Function]}
       autosize={true}
       backspaceRemoves={true}
@@ -113,19 +117,23 @@ exports[`test renders colored type 1`] = `
       value="published"
       valueComponent={[Function]}
       valueKey="value"
-      valueRenderer={[Function]}>
+      valueRenderer={[Function]}
+    >
       <div
-        className="Select fUPKPg Select--single is-searchable has-value">
+        className="Select fUPKPg Select--single is-searchable has-value"
+      >
         <div
           className="Select-control"
           onKeyDown={[Function]}
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
-          onTouchStart={[Function]}>
+          onTouchStart={[Function]}
+        >
           <span
             className="Select-multi-value-wrapper"
-            id="react-select-4--value">
+            id="react-select-4--value"
+          >
             <Value
               disabled={false}
               id="react-select-4--value-item"
@@ -137,14 +145,17 @@ exports[`test renders colored type 1`] = `
                   "label": "Published",
                   "value": "published",
                 }
-              }>
+              }
+            >
               <div
-                className="Select-value">
+                className="Select-value"
+              >
                 <span
                   aria-selected="true"
                   className="Select-value-label"
                   id="react-select-4--value-item"
-                  role="option">
+                  role="option"
+                >
                   <div
                     style={
                       Object {
@@ -152,14 +163,16 @@ exports[`test renders colored type 1`] = `
                         "display": "inline-flex",
                         "fontFamily": "Roboto Condensed",
                       }
-                    }>
+                    }
+                  >
                     <div
                       style={
                         Object {
                           "color": "#28af60",
                           "fontSize": "16px",
                         }
-                      }>
+                      }
+                    >
                       Published
                     </div>
                   </div>
@@ -178,14 +191,16 @@ exports[`test renders colored type 1`] = `
               onFocus={[Function]}
               required={false}
               role="combobox"
-              value="">
+              value=""
+            >
               <div
                 className="Select-input"
                 style={
                   Object {
                     "display": "inline-block",
                   }
-                }>
+                }
+              >
                 <input
                   aria-activedescendant="react-select-4--value"
                   aria-expanded="false"
@@ -202,7 +217,8 @@ exports[`test renders colored type 1`] = `
                       "width": "5px",
                     }
                   }
-                  value="" />
+                  value=""
+                />
                 <div
                   style={
                     Object {
@@ -214,7 +230,8 @@ exports[`test renders colored type 1`] = `
                       "visibility": "hidden",
                       "whiteSpace": "pre",
                     }
-                  } />
+                  }
+                />
               </div>
             </AutosizeInput>
           </span>
@@ -225,21 +242,25 @@ exports[`test renders colored type 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            title="Clear value">
+            title="Clear value"
+          >
             <span
               className="Select-clear"
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "&times;",
                 }
-              } />
+              }
+            />
           </span>
           <span
             className="Select-arrow-zone"
-            onMouseDown={[Function]}>
+            onMouseDown={[Function]}
+          >
             <span
               className="Select-arrow"
-              onMouseDown={[Function]} />
+              onMouseDown={[Function]}
+            />
           </span>
         </div>
       </div>
@@ -248,7 +269,7 @@ exports[`test renders colored type 1`] = `
 </Select>
 `;
 
-exports[`test renders colored-circle type 1`] = `
+exports[`renders colored-circle type 1`] = `
 <Select
   onUpdate={[Function]}
   options={
@@ -272,7 +293,8 @@ exports[`test renders colored-circle type 1`] = `
   }
   placeholder="Filter by category"
   type="colored-circle"
-  value="session">
+  value="session"
+>
   <Styled(Select)
     onChange={[Function]}
     onUpdate={[Function]}
@@ -298,9 +320,10 @@ exports[`test renders colored-circle type 1`] = `
     }
     placeholder="Filter by category"
     value="session"
-    valueRenderer={[Function]}>
+    valueRenderer={[Function]}
+  >
     <Select
-      addLabelText="Add \"{label}\"?"
+      addLabelText="Add \\"{label}\\"?"
       arrowRenderer={[Function]}
       autosize={true}
       backspaceRemoves={true}
@@ -363,19 +386,23 @@ exports[`test renders colored-circle type 1`] = `
       value="session"
       valueComponent={[Function]}
       valueKey="value"
-      valueRenderer={[Function]}>
+      valueRenderer={[Function]}
+    >
       <div
-        className="Select fUPKPg Select--single is-searchable has-value">
+        className="Select fUPKPg Select--single is-searchable has-value"
+      >
         <div
           className="Select-control"
           onKeyDown={[Function]}
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
-          onTouchStart={[Function]}>
+          onTouchStart={[Function]}
+        >
           <span
             className="Select-multi-value-wrapper"
-            id="react-select-5--value">
+            id="react-select-5--value"
+          >
             <Value
               disabled={false}
               id="react-select-5--value-item"
@@ -387,14 +414,17 @@ exports[`test renders colored-circle type 1`] = `
                   "label": "Sessions",
                   "value": "session",
                 }
-              }>
+              }
+            >
               <div
-                className="Select-value">
+                className="Select-value"
+              >
                 <span
                   aria-selected="true"
                   className="Select-value-label"
                   id="react-select-5--value-item"
-                  role="option">
+                  role="option"
+                >
                   <div
                     style={
                       Object {
@@ -402,7 +432,8 @@ exports[`test renders colored-circle type 1`] = `
                         "display": "inline-flex",
                         "fontFamily": "Roboto Condensed",
                       }
-                    }>
+                    }
+                  >
                     <div
                       style={
                         Object {
@@ -413,14 +444,16 @@ exports[`test renders colored-circle type 1`] = `
                           "margin": "0 5px",
                           "width": "10px",
                         }
-                      } />
+                      }
+                    />
                     <div
                       style={
                         Object {
                           "fontSize": "16px",
                           "paddingLeft": "3px",
                         }
-                      }>
+                      }
+                    >
                       Sessions
                     </div>
                   </div>
@@ -439,14 +472,16 @@ exports[`test renders colored-circle type 1`] = `
               onFocus={[Function]}
               required={false}
               role="combobox"
-              value="">
+              value=""
+            >
               <div
                 className="Select-input"
                 style={
                   Object {
                     "display": "inline-block",
                   }
-                }>
+                }
+              >
                 <input
                   aria-activedescendant="react-select-5--value"
                   aria-expanded="false"
@@ -463,7 +498,8 @@ exports[`test renders colored-circle type 1`] = `
                       "width": "5px",
                     }
                   }
-                  value="" />
+                  value=""
+                />
                 <div
                   style={
                     Object {
@@ -475,7 +511,8 @@ exports[`test renders colored-circle type 1`] = `
                       "visibility": "hidden",
                       "whiteSpace": "pre",
                     }
-                  } />
+                  }
+                />
               </div>
             </AutosizeInput>
           </span>
@@ -486,21 +523,25 @@ exports[`test renders colored-circle type 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            title="Clear value">
+            title="Clear value"
+          >
             <span
               className="Select-clear"
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "&times;",
                 }
-              } />
+              }
+            />
           </span>
           <span
             className="Select-arrow-zone"
-            onMouseDown={[Function]}>
+            onMouseDown={[Function]}
+          >
             <span
               className="Select-arrow"
-              onMouseDown={[Function]} />
+              onMouseDown={[Function]}
+            />
           </span>
         </div>
       </div>
@@ -509,7 +550,7 @@ exports[`test renders colored-circle type 1`] = `
 </Select>
 `;
 
-exports[`test renders correctly 1`] = `
+exports[`renders correctly 1`] = `
 <Select
   onUpdate={[Function]}
   options={
@@ -527,7 +568,8 @@ exports[`test renders correctly 1`] = `
         "value": "moderators",
       },
     ]
-  }>
+  }
+>
   <Styled(Select)
     onChange={[Function]}
     onUpdate={[Function]}
@@ -549,9 +591,10 @@ exports[`test renders correctly 1`] = `
       ]
     }
     value=""
-    valueRenderer={[Function]}>
+    valueRenderer={[Function]}
+  >
     <Select
-      addLabelText="Add \"{label}\"?"
+      addLabelText="Add \\"{label}\\"?"
       arrowRenderer={[Function]}
       autosize={true}
       backspaceRemoves={true}
@@ -611,21 +654,26 @@ exports[`test renders correctly 1`] = `
       value=""
       valueComponent={[Function]}
       valueKey="value"
-      valueRenderer={[Function]}>
+      valueRenderer={[Function]}
+    >
       <div
-        className="Select fUPKPg Select--single is-searchable">
+        className="Select fUPKPg Select--single is-searchable"
+      >
         <div
           className="Select-control"
           onKeyDown={[Function]}
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
-          onTouchStart={[Function]}>
+          onTouchStart={[Function]}
+        >
           <span
             className="Select-multi-value-wrapper"
-            id="react-select-2--value">
+            id="react-select-2--value"
+          >
             <div
-              className="Select-placeholder">
+              className="Select-placeholder"
+            >
               Select...
             </div>
             <AutosizeInput
@@ -640,14 +688,16 @@ exports[`test renders correctly 1`] = `
               onFocus={[Function]}
               required={false}
               role="combobox"
-              value="">
+              value=""
+            >
               <div
                 className="Select-input"
                 style={
                   Object {
                     "display": "inline-block",
                   }
-                }>
+                }
+              >
                 <input
                   aria-activedescendant="react-select-2--value"
                   aria-expanded="false"
@@ -664,7 +714,8 @@ exports[`test renders correctly 1`] = `
                       "width": "5px",
                     }
                   }
-                  value="" />
+                  value=""
+                />
                 <div
                   style={
                     Object {
@@ -676,16 +727,19 @@ exports[`test renders correctly 1`] = `
                       "visibility": "hidden",
                       "whiteSpace": "pre",
                     }
-                  } />
+                  }
+                />
               </div>
             </AutosizeInput>
           </span>
           <span
             className="Select-arrow-zone"
-            onMouseDown={[Function]}>
+            onMouseDown={[Function]}
+          >
             <span
               className="Select-arrow"
-              onMouseDown={[Function]} />
+              onMouseDown={[Function]}
+            />
           </span>
         </div>
       </div>
@@ -694,7 +748,7 @@ exports[`test renders correctly 1`] = `
 </Select>
 `;
 
-exports[`test renders icon type 1`] = `
+exports[`renders icon type 1`] = `
 <Select
   onUpdate={[Function]}
   options={
@@ -727,7 +781,8 @@ exports[`test renders icon type 1`] = `
   }
   placeholder="Filter by note type"
   type="icon"
-  value="Tickets">
+  value="Tickets"
+>
   <Styled(Select)
     onChange={[Function]}
     onUpdate={[Function]}
@@ -762,9 +817,10 @@ exports[`test renders icon type 1`] = `
     }
     placeholder="Filter by note type"
     value="Tickets"
-    valueRenderer={[Function]}>
+    valueRenderer={[Function]}
+  >
     <Select
-      addLabelText="Add \"{label}\"?"
+      addLabelText="Add \\"{label}\\"?"
       arrowRenderer={[Function]}
       autosize={true}
       backspaceRemoves={true}
@@ -836,19 +892,23 @@ exports[`test renders icon type 1`] = `
       value="Tickets"
       valueComponent={[Function]}
       valueKey="value"
-      valueRenderer={[Function]}>
+      valueRenderer={[Function]}
+    >
       <div
-        className="Select fUPKPg Select--single is-searchable has-value">
+        className="Select fUPKPg Select--single is-searchable has-value"
+      >
         <div
           className="Select-control"
           onKeyDown={[Function]}
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
-          onTouchStart={[Function]}>
+          onTouchStart={[Function]}
+        >
           <span
             className="Select-multi-value-wrapper"
-            id="react-select-7--value">
+            id="react-select-7--value"
+          >
             <Value
               disabled={false}
               id="react-select-7--value-item"
@@ -861,14 +921,17 @@ exports[`test renders icon type 1`] = `
                   "label": "User",
                   "value": "Tickets",
                 }
-              }>
+              }
+            >
               <div
-                className="Select-value">
+                className="Select-value"
+              >
                 <span
                   aria-selected="true"
                   className="Select-value-label"
                   id="react-select-7--value-item"
-                  role="option">
+                  role="option"
+                >
                   <div
                     style={
                       Object {
@@ -876,11 +939,13 @@ exports[`test renders icon type 1`] = `
                         "display": "inline-flex",
                         "fontFamily": "Roboto Condensed",
                       }
-                    }>
+                    }
+                  >
                     <Icon
                       color="#3498DB"
                       icon="users2"
-                      size="18px">
+                      size="18px"
+                    >
                       <span
                         className="icon-users2"
                         style={
@@ -888,7 +953,8 @@ exports[`test renders icon type 1`] = `
                             "color": "#3498DB",
                             "fontSize": "18px",
                           }
-                        } />
+                        }
+                      />
                     </Icon>
                     <div
                       style={
@@ -896,7 +962,8 @@ exports[`test renders icon type 1`] = `
                           "fontSize": "16px",
                           "paddingLeft": "7px",
                         }
-                      }>
+                      }
+                    >
                       User
                     </div>
                   </div>
@@ -915,14 +982,16 @@ exports[`test renders icon type 1`] = `
               onFocus={[Function]}
               required={false}
               role="combobox"
-              value="">
+              value=""
+            >
               <div
                 className="Select-input"
                 style={
                   Object {
                     "display": "inline-block",
                   }
-                }>
+                }
+              >
                 <input
                   aria-activedescendant="react-select-7--value"
                   aria-expanded="false"
@@ -939,7 +1008,8 @@ exports[`test renders icon type 1`] = `
                       "width": "5px",
                     }
                   }
-                  value="" />
+                  value=""
+                />
                 <div
                   style={
                     Object {
@@ -951,7 +1021,8 @@ exports[`test renders icon type 1`] = `
                       "visibility": "hidden",
                       "whiteSpace": "pre",
                     }
-                  } />
+                  }
+                />
               </div>
             </AutosizeInput>
           </span>
@@ -962,21 +1033,25 @@ exports[`test renders icon type 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            title="Clear value">
+            title="Clear value"
+          >
             <span
               className="Select-clear"
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "&times;",
                 }
-              } />
+              }
+            />
           </span>
           <span
             className="Select-arrow-zone"
-            onMouseDown={[Function]}>
+            onMouseDown={[Function]}
+          >
             <span
               className="Select-arrow"
-              onMouseDown={[Function]} />
+              onMouseDown={[Function]}
+            />
           </span>
         </div>
       </div>
@@ -985,7 +1060,7 @@ exports[`test renders icon type 1`] = `
 </Select>
 `;
 
-exports[`test renders image type 1`] = `
+exports[`renders image type 1`] = `
 <Select
   onUpdate={[Function]}
   options={
@@ -1009,7 +1084,8 @@ exports[`test renders image type 1`] = `
   }
   placeholder="Select app"
   type="image"
-  value="id2">
+  value="id2"
+>
   <Styled(Select)
     onChange={[Function]}
     onUpdate={[Function]}
@@ -1035,9 +1111,10 @@ exports[`test renders image type 1`] = `
     }
     placeholder="Select app"
     value="id2"
-    valueRenderer={[Function]}>
+    valueRenderer={[Function]}
+  >
     <Select
-      addLabelText="Add \"{label}\"?"
+      addLabelText="Add \\"{label}\\"?"
       arrowRenderer={[Function]}
       autosize={true}
       backspaceRemoves={true}
@@ -1100,19 +1177,23 @@ exports[`test renders image type 1`] = `
       value="id2"
       valueComponent={[Function]}
       valueKey="value"
-      valueRenderer={[Function]}>
+      valueRenderer={[Function]}
+    >
       <div
-        className="Select fUPKPg Select--single is-searchable has-value">
+        className="Select fUPKPg Select--single is-searchable has-value"
+      >
         <div
           className="Select-control"
           onKeyDown={[Function]}
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
-          onTouchStart={[Function]}>
+          onTouchStart={[Function]}
+        >
           <span
             className="Select-multi-value-wrapper"
-            id="react-select-6--value">
+            id="react-select-6--value"
+          >
             <Value
               disabled={false}
               id="react-select-6--value-item"
@@ -1124,14 +1205,17 @@ exports[`test renders image type 1`] = `
                   "label": "NCS",
                   "value": "id2",
                 }
-              }>
+              }
+            >
               <div
-                className="Select-value">
+                className="Select-value"
+              >
                 <span
                   aria-selected="true"
                   className="Select-value-label"
                   id="react-select-6--value-item"
-                  role="option">
+                  role="option"
+                >
                   <div
                     style={
                       Object {
@@ -1139,11 +1223,13 @@ exports[`test renders image type 1`] = `
                         "display": "inline-flex",
                         "fontFamily": "Roboto Condensed",
                       }
-                    }>
+                    }
+                  >
                     <Thumb
                       height={20}
                       image="http://imgur.com/AN63ghL.png"
-                      width={20}>
+                      width={20}
+                    >
                       <div
                         className="display:flex flex:items-center flex:content-center border:rounded color:neutral"
                         style={
@@ -1153,10 +1239,12 @@ exports[`test renders image type 1`] = `
                             "height": "20px",
                             "width": "20px",
                           }
-                        }>
+                        }
+                      >
                         <img
                           className="w:100p border:rounded"
-                          src="http://imgur.com/AN63ghL.png" />
+                          src="http://imgur.com/AN63ghL.png"
+                        />
                       </div>
                     </Thumb>
                     <div
@@ -1165,7 +1253,8 @@ exports[`test renders image type 1`] = `
                           "fontSize": "16px",
                           "paddingLeft": "7px",
                         }
-                      }>
+                      }
+                    >
                       NCS
                     </div>
                   </div>
@@ -1184,14 +1273,16 @@ exports[`test renders image type 1`] = `
               onFocus={[Function]}
               required={false}
               role="combobox"
-              value="">
+              value=""
+            >
               <div
                 className="Select-input"
                 style={
                   Object {
                     "display": "inline-block",
                   }
-                }>
+                }
+              >
                 <input
                   aria-activedescendant="react-select-6--value"
                   aria-expanded="false"
@@ -1208,7 +1299,8 @@ exports[`test renders image type 1`] = `
                       "width": "5px",
                     }
                   }
-                  value="" />
+                  value=""
+                />
                 <div
                   style={
                     Object {
@@ -1220,7 +1312,8 @@ exports[`test renders image type 1`] = `
                       "visibility": "hidden",
                       "whiteSpace": "pre",
                     }
-                  } />
+                  }
+                />
               </div>
             </AutosizeInput>
           </span>
@@ -1231,21 +1324,25 @@ exports[`test renders image type 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            title="Clear value">
+            title="Clear value"
+          >
             <span
               className="Select-clear"
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "&times;",
                 }
-              } />
+              }
+            />
           </span>
           <span
             className="Select-arrow-zone"
-            onMouseDown={[Function]}>
+            onMouseDown={[Function]}
+          >
             <span
               className="Select-arrow"
-              onMouseDown={[Function]} />
+              onMouseDown={[Function]}
+            />
           </span>
         </div>
       </div>
@@ -1254,7 +1351,7 @@ exports[`test renders image type 1`] = `
 </Select>
 `;
 
-exports[`test renders multi selected 1`] = `
+exports[`renders multi selected 1`] = `
 <Select
   multi={true}
   onUpdate={[Function]}
@@ -1292,7 +1389,8 @@ exports[`test renders multi selected 1`] = `
       "important",
       "warning",
     ]
-  }>
+  }
+>
   <Styled(Select)
     multi={true}
     onChange={[Function]}
@@ -1333,9 +1431,10 @@ exports[`test renders multi selected 1`] = `
         "warning",
       ]
     }
-    valueRenderer={[Function]}>
+    valueRenderer={[Function]}
+  >
     <Select
-      addLabelText="Add \"{label}\"?"
+      addLabelText="Add \\"{label}\\"?"
       arrowRenderer={[Function]}
       autosize={true}
       backspaceRemoves={true}
@@ -1412,19 +1511,23 @@ exports[`test renders multi selected 1`] = `
       }
       valueComponent={[Function]}
       valueKey="value"
-      valueRenderer={[Function]}>
+      valueRenderer={[Function]}
+    >
       <div
-        className="Select fUPKPg Select--multi is-searchable has-value">
+        className="Select fUPKPg Select--multi is-searchable has-value"
+      >
         <div
           className="Select-control"
           onKeyDown={[Function]}
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
-          onTouchStart={[Function]}>
+          onTouchStart={[Function]}
+        >
           <span
             className="Select-multi-value-wrapper"
-            id="react-select-3--value">
+            id="react-select-3--value"
+          >
             <Value
               disabled={false}
               id="react-select-3--value-0"
@@ -1436,23 +1539,27 @@ exports[`test renders multi selected 1`] = `
                   "label": "important",
                   "value": "important",
                 }
-              }>
+              }
+            >
               <div
-                className="Select-value">
+                className="Select-value"
+              >
                 <span
                   aria-hidden="true"
                   className="Select-value-icon"
                   onMouseDown={[Function]}
                   onTouchEnd={[Function]}
                   onTouchMove={[Function]}
-                  onTouchStart={[Function]}>
+                  onTouchStart={[Function]}
+                >
                   ×
                 </span>
                 <span
                   aria-selected="true"
                   className="Select-value-label"
                   id="react-select-3--value-0"
-                  role="option">
+                  role="option"
+                >
                   <div
                     style={
                       Object {
@@ -1460,18 +1567,21 @@ exports[`test renders multi selected 1`] = `
                         "display": "inline-flex",
                         "fontFamily": "Roboto Condensed",
                       }
-                    }>
+                    }
+                  >
                     <div
                       style={
                         Object {
                           "fontSize": "16px",
                         }
-                      }>
+                      }
+                    >
                       important
                     </div>
                   </div>
                   <span
-                    className="Select-aria-only">
+                    className="Select-aria-only"
+                  >
                      
                   </span>
                 </span>
@@ -1488,23 +1598,27 @@ exports[`test renders multi selected 1`] = `
                   "label": "warning",
                   "value": "warning",
                 }
-              }>
+              }
+            >
               <div
-                className="Select-value">
+                className="Select-value"
+              >
                 <span
                   aria-hidden="true"
                   className="Select-value-icon"
                   onMouseDown={[Function]}
                   onTouchEnd={[Function]}
                   onTouchMove={[Function]}
-                  onTouchStart={[Function]}>
+                  onTouchStart={[Function]}
+                >
                   ×
                 </span>
                 <span
                   aria-selected="true"
                   className="Select-value-label"
                   id="react-select-3--value-1"
-                  role="option">
+                  role="option"
+                >
                   <div
                     style={
                       Object {
@@ -1512,18 +1626,21 @@ exports[`test renders multi selected 1`] = `
                         "display": "inline-flex",
                         "fontFamily": "Roboto Condensed",
                       }
-                    }>
+                    }
+                  >
                     <div
                       style={
                         Object {
                           "fontSize": "16px",
                         }
-                      }>
+                      }
+                    >
                       warning
                     </div>
                   </div>
                   <span
-                    className="Select-aria-only">
+                    className="Select-aria-only"
+                  >
                      
                   </span>
                 </span>
@@ -1541,14 +1658,16 @@ exports[`test renders multi selected 1`] = `
               onFocus={[Function]}
               required={false}
               role="combobox"
-              value="">
+              value=""
+            >
               <div
                 className="Select-input"
                 style={
                   Object {
                     "display": "inline-block",
                   }
-                }>
+                }
+              >
                 <input
                   aria-activedescendant="react-select-3--value"
                   aria-expanded="false"
@@ -1565,7 +1684,8 @@ exports[`test renders multi selected 1`] = `
                       "width": "5px",
                     }
                   }
-                  value="" />
+                  value=""
+                />
                 <div
                   style={
                     Object {
@@ -1577,7 +1697,8 @@ exports[`test renders multi selected 1`] = `
                       "visibility": "hidden",
                       "whiteSpace": "pre",
                     }
-                  } />
+                  }
+                />
               </div>
             </AutosizeInput>
           </span>
@@ -1588,21 +1709,25 @@ exports[`test renders multi selected 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            title="Clear all">
+            title="Clear all"
+          >
             <span
               className="Select-clear"
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "&times;",
                 }
-              } />
+              }
+            />
           </span>
           <span
             className="Select-arrow-zone"
-            onMouseDown={[Function]}>
+            onMouseDown={[Function]}
+          >
             <span
               className="Select-arrow"
-              onMouseDown={[Function]} />
+              onMouseDown={[Function]}
+            />
           </span>
         </div>
       </div>
@@ -1611,7 +1736,7 @@ exports[`test renders multi selected 1`] = `
 </Select>
 `;
 
-exports[`test renders value-styled type 1`] = `
+exports[`renders value-styled type 1`] = `
 <Select
   onUpdate={[Function]}
   options={
@@ -1637,7 +1762,8 @@ exports[`test renders value-styled type 1`] = `
   placeholder="Text transform"
   styledProperty="textTransform"
   type="value-styled"
-  value="uppercase">
+  value="uppercase"
+>
   <Styled(Select)
     onChange={[Function]}
     onUpdate={[Function]}
@@ -1665,9 +1791,10 @@ exports[`test renders value-styled type 1`] = `
     placeholder="Text transform"
     styledProperty="textTransform"
     value="uppercase"
-    valueRenderer={[Function]}>
+    valueRenderer={[Function]}
+  >
     <Select
-      addLabelText="Add \"{label}\"?"
+      addLabelText="Add \\"{label}\\"?"
       arrowRenderer={[Function]}
       autosize={true}
       backspaceRemoves={true}
@@ -1732,19 +1859,23 @@ exports[`test renders value-styled type 1`] = `
       value="uppercase"
       valueComponent={[Function]}
       valueKey="value"
-      valueRenderer={[Function]}>
+      valueRenderer={[Function]}
+    >
       <div
-        className="Select fUPKPg Select--single is-searchable has-value">
+        className="Select fUPKPg Select--single is-searchable has-value"
+      >
         <div
           className="Select-control"
           onKeyDown={[Function]}
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
-          onTouchStart={[Function]}>
+          onTouchStart={[Function]}
+        >
           <span
             className="Select-multi-value-wrapper"
-            id="react-select-8--value">
+            id="react-select-8--value"
+          >
             <Value
               disabled={false}
               id="react-select-8--value-item"
@@ -1755,14 +1886,17 @@ exports[`test renders value-styled type 1`] = `
                   "label": "Uppercase",
                   "value": "uppercase",
                 }
-              }>
+              }
+            >
               <div
-                className="Select-value">
+                className="Select-value"
+              >
                 <span
                   aria-selected="true"
                   className="Select-value-label"
                   id="react-select-8--value-item"
-                  role="option">
+                  role="option"
+                >
                   <div
                     style={
                       Object {
@@ -1770,14 +1904,16 @@ exports[`test renders value-styled type 1`] = `
                         "display": "inline-flex",
                         "fontFamily": "Roboto Condensed",
                       }
-                    }>
+                    }
+                  >
                     <div
                       style={
                         Object {
                           "fontSize": "16px",
                           "textTransform": "uppercase",
                         }
-                      }>
+                      }
+                    >
                       Uppercase
                     </div>
                   </div>
@@ -1796,14 +1932,16 @@ exports[`test renders value-styled type 1`] = `
               onFocus={[Function]}
               required={false}
               role="combobox"
-              value="">
+              value=""
+            >
               <div
                 className="Select-input"
                 style={
                   Object {
                     "display": "inline-block",
                   }
-                }>
+                }
+              >
                 <input
                   aria-activedescendant="react-select-8--value"
                   aria-expanded="false"
@@ -1820,7 +1958,8 @@ exports[`test renders value-styled type 1`] = `
                       "width": "5px",
                     }
                   }
-                  value="" />
+                  value=""
+                />
                 <div
                   style={
                     Object {
@@ -1832,7 +1971,8 @@ exports[`test renders value-styled type 1`] = `
                       "visibility": "hidden",
                       "whiteSpace": "pre",
                     }
-                  } />
+                  }
+                />
               </div>
             </AutosizeInput>
           </span>
@@ -1843,21 +1983,25 @@ exports[`test renders value-styled type 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            title="Clear value">
+            title="Clear value"
+          >
             <span
               className="Select-clear"
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "&times;",
                 }
-              } />
+              }
+            />
           </span>
           <span
             className="Select-arrow-zone"
-            onMouseDown={[Function]}>
+            onMouseDown={[Function]}
+          >
             <span
               className="Select-arrow"
-              onMouseDown={[Function]} />
+              onMouseDown={[Function]}
+            />
           </span>
         </div>
       </div>
