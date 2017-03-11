@@ -26,7 +26,6 @@ const styles = {
   itemWrapper: {
     display: 'inline-flex',
     alignItems: 'center',
-    fontFamily: 'Roboto Condensed',
   },
 };
 

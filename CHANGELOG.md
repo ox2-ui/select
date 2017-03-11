@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## 5.0.1 - 2017-03-11
+### Changed
+- [Select] remove inline style font declaration
+
 ## 5.0.0 - 2017-03-11
 ### Changed
 - [Select] BREAKING: no more default dark grey background fro `image type`, added `fallbackIconBg` `fallbackIconColor` props to help achive previuos behavior.

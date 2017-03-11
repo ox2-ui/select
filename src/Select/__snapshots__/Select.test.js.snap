@@ -161,7 +161,6 @@ exports[`renders colored type 1`] = `
                       Object {
                         "alignItems": "center",
                         "display": "inline-flex",
-                        "fontFamily": "Roboto Condensed",
                       }
                     }
                   >
@@ -430,7 +429,6 @@ exports[`renders colored-circle type 1`] = `
                       Object {
                         "alignItems": "center",
                         "display": "inline-flex",
-                        "fontFamily": "Roboto Condensed",
                       }
                     }
                   >
@@ -937,7 +935,6 @@ exports[`renders icon type 1`] = `
                       Object {
                         "alignItems": "center",
                         "display": "inline-flex",
-                        "fontFamily": "Roboto Condensed",
                       }
                     }
                   >
@@ -1221,7 +1218,6 @@ exports[`renders image type 1`] = `
                       Object {
                         "alignItems": "center",
                         "display": "inline-flex",
-                        "fontFamily": "Roboto Condensed",
                       }
                     }
                   >
@@ -1565,7 +1561,6 @@ exports[`renders multi selected 1`] = `
                       Object {
                         "alignItems": "center",
                         "display": "inline-flex",
-                        "fontFamily": "Roboto Condensed",
                       }
                     }
                   >
@@ -1624,7 +1619,6 @@ exports[`renders multi selected 1`] = `
                       Object {
                         "alignItems": "center",
                         "display": "inline-flex",
-                        "fontFamily": "Roboto Condensed",
                       }
                     }
                   >
@@ -1902,7 +1896,6 @@ exports[`renders value-styled type 1`] = `
                       Object {
                         "alignItems": "center",
                         "display": "inline-flex",
-                        "fontFamily": "Roboto Condensed",
                       }
                     }
                   >
@@ -2198,7 +2191,6 @@ exports[`renders with fallback icon 1`] = `
                       Object {
                         "alignItems": "center",
                         "display": "inline-flex",
-                        "fontFamily": "Roboto Condensed",
                       }
                     }
                   >
