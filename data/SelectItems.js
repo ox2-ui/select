@@ -4,6 +4,13 @@ export const Groups = [
   { label: 'Moderators', value: 'moderators' },
 ];
 
+export const textTransform = [
+  { label: 'None', value: 'none' },
+  { label: 'Capitalize', value: 'capitalize' },
+  { label: 'Uppercase', value: 'uppercase' },
+  { label: 'Lowercase', value: 'lowercase' },
+];
+
 export const Apps = [
   { label: 'Aci', value: 'id1', image: 'http://imgur.com/N2LoYmv.png' },
   { label: 'NCS', value: 'id2', image: 'http://imgur.com/AN63ghL.png' },

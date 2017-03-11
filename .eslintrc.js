@@ -129,7 +129,7 @@ module.exports = {
     'react/jsx-no-bind': 'off',
     'react/jsx-no-literals': 'off',
     'react/jsx-no-target-blank': 'off',
-    'react/jsx-sort-props': 'off',
+    'react/jsx-sort-props': 'error',
     'react/no-set-state': 'off',
     'react/forbid-prop-types': 'off',
     'react/prefer-stateless-function': 'off',

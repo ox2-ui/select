@@ -1,9 +1,17 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import SelectField from './SelectField';
-import { Groups, Apps, People, StatusLabels, Categories, Types, Tags } from '../../data/SelectItems';
+import { Groups,
+  Apps,
+  Categories,
+  People,
+  StatusLabels,
+  Tags,
+  textTransform,
+  Types,
+} from '../../data/SelectItems';
 
-const handleUpdate = (value) => console.log('🐳', value); // eslint-disable-line no-console
+const handler = (value) => console.log('🐳', value); // eslint-disable-line no-console
 
 //
 //      This a copy of Selext.story.js with changed component name
@@ -12,54 +20,73 @@ const handleUpdate = (value) => console.log('🐳', value); // eslint-disable-li
 storiesOf('SelectField', module)
   .add('single', () => (
     <SelectField
+      onUpdate={handler}
       options={Groups}
-      onUpdate={handleUpdate}
     />
   ))
   .add('selected', () => (
     <SelectField
-      value={'attendies'}
+      onUpdate={handler}
       options={Groups}
-      onUpdate={handleUpdate}
+      value={'attendies'}
     />
   ))
   .add('multi', () => (
     <SelectField
-      options={Tags}
-      onUpdate={handleUpdate}
       multi={true}
+      onUpdate={handler}
+      options={Tags}
       simpleValue={true}
     />
   ))
   .add('multi selected', () => (
     <SelectField
-      options={Tags}
-      onUpdate={handleUpdate}
       multi={true}
+      onUpdate={handler}
+      options={Tags}
       simpleValue={true}
       value={['important', 'warning']}
     />
   ))
   .add('disable clear', () => (
     <SelectField
-      options={Groups}
-      onUpdate={handleUpdate}
-      value={'attendies'}
       clearable={false}
+      onUpdate={handler}
+      options={Groups}
+      value={'attendies'}
+    />
+  ))
+  .add('type: value-styled', () => (
+    <SelectField
+      onUpdate={handler}
+      options={textTransform}
+      placeholder={'Text transform'}
+      styledProperty={'textTransform'}
+      type={'value-styled'}
+    />
+  ))
+  .add('type: value-styled - selected', () => (
+    <SelectField
+      onUpdate={handler}
+      options={textTransform}
+      placeholder={'Text transform'}
+      styledProperty={'textTransform'}
+      type={'value-styled'}
+      value={'uppercase'}
     />
   ))
   .add('type: colored', () => (
     <SelectField
+      onUpdate={handler}
       options={StatusLabels}
-      onUpdate={handleUpdate}
       placeholder={'Filter by status'}
       type={'colored'}
     />
   ))
   .add('type: colored - selected', () => (
     <SelectField
+      onUpdate={handler}
       options={StatusLabels}
-      onUpdate={handleUpdate}
       placeholder={'Filter by status'}
       type={'colored'}
       value={'published'}
@@ -67,26 +94,26 @@ storiesOf('SelectField', module)
   ))
   .add('type: colored multi', () => (
     <SelectField
-      options={StatusLabels}
-      onUpdate={handleUpdate}
-      placeholder={'Filter by status'}
-      type={'colored'}
       multi={true}
+      onUpdate={handler}
+      options={StatusLabels}
+      placeholder={'Filter by status'}
       simpleValue={true}
+      type={'colored'}
     />
   ))
   .add('type: colored-circle', () => (
     <SelectField
+      onUpdate={handler}
       options={Categories}
-      onUpdate={handleUpdate}
       placeholder={'Filter by category'}
       type={'colored-circle'}
     />
   ))
   .add('type: colored-circle - selected', () => (
     <SelectField
+      onUpdate={handler}
       options={Categories}
-      onUpdate={handleUpdate}
       placeholder={'Filter by category'}
       type={'colored-circle'}
       value={'session'}
@@ -94,108 +121,108 @@ storiesOf('SelectField', module)
   ))
   .add('type: colored-circle multi', () => (
     <SelectField
-      options={Categories}
-      onUpdate={handleUpdate}
-      placeholder={'Filter by category'}
-      type={'colored-circle'}
       multi={true}
+      onUpdate={handler}
+      options={Categories}
+      placeholder={'Filter by category'}
       simpleValue={true}
+      type={'colored-circle'}
     />
   ))
   .add('type: image', () => (
     <SelectField
+      onUpdate={handler}
       options={Apps}
-      onUpdate={handleUpdate}
       placeholder={'SelectField app'}
       type={'image'}
     />
   ))
   .add('type: image - selected', () => (
     <SelectField
-      value={'id2'}
+      onUpdate={handler}
       options={Apps}
-      onUpdate={handleUpdate}
       placeholder={'SelectField app'}
       type={'image'}
+      value={'id2'}
     />
   ))
   .add('type: image multi', () => (
     <SelectField
-      options={Apps}
-      onUpdate={handleUpdate}
       multi={true}
-      simpleValue={true}
+      onUpdate={handler}
+      options={Apps}
       placeholder={'SelectField app'}
+      simpleValue={true}
       type={'image'}
     />
   ))
   .add('type: image 2', () => (
     <SelectField
-      options={People}
-      onUpdate={handleUpdate}
-      placeholder={'SelectField person'}
-      offlineEnabled={true}
-      type={'image'}
       fallbackIcon={'user'}
+      offlineEnabled={true}
+      onUpdate={handler}
+      options={People}
+      placeholder={'SelectField person'}
+      type={'image'}
     />
   ))
   .add('type: image 2 multi', () => (
     <SelectField
-      options={People}
-      onUpdate={handleUpdate}
-      placeholder={'SelectField person'}
-      offlineEnabled={true}
-      type={'image'}
       fallbackIcon={'user'}
       multi={true}
+      offlineEnabled={true}
+      onUpdate={handler}
+      options={People}
+      placeholder={'SelectField person'}
       simpleValue={true}
+      type={'image'}
     />
   ))
   .add('type: icon', () => (
     <SelectField
+      onUpdate={handler}
       options={Types}
-      onUpdate={handleUpdate}
       placeholder={'Filter by note type'}
       type={'icon'}
     />
   ))
   .add('type: icon - selected', () => (
     <SelectField
-      value={'Tickets'}
+      onUpdate={handler}
       options={Types}
-      onUpdate={handleUpdate}
       placeholder={'Filter by note type'}
       type={'icon'}
+      value={'Tickets'}
     />
   ))
   .add('type: icon multi', () => (
     <SelectField
-      options={Types}
-      onUpdate={handleUpdate}
-      placeholder={'Filter by note type'}
-      type={'icon'}
       multi={true}
+      onUpdate={handler}
+      options={Types}
+      placeholder={'Filter by note type'}
       simpleValue={true}
+      type={'icon'}
     />
   ))
   .add('type: icon & large', () => (
     <SelectField
-      options={Types}
       iconSize={'25px'}
-      onUpdate={handleUpdate}
+      onUpdate={handler}
+      options={Types}
       placeholder={'Filter by note type'}
       type={'icon'}
     />
   ))
   .add('type: icon & large & multi', () => (
     <SelectField
-      options={Types}
       iconSize={'25px'}
-      onUpdate={handleUpdate}
       multi={true}
+      onUpdate={handler}
+      options={Types}
+      placeholder={'Filter by note type'}
       simpleValue={true}
       style={{height: '38px'}}
-      placeholder={'Filter by note type'}
       type={'icon'}
     />
   ));

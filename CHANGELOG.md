@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## 4.3.0 - 2017-02-25
+### Added
+- [SelectField] new `value-styled` type
+
 ## 4.2.3 - 2017-02-25
 ### Changed
 - [SelectField] reduce focused border width

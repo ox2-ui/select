@@ -92,13 +92,18 @@ class Select extends Component {
      */
     placeholder: PropTypes.string,
     /**
+     * Style property to use for value-styled type
+     */
+    styledProperty: PropTypes.string,
+    /**
      * Set type
      */
     type: PropTypes.oneOf([
       'colored',
-      'image',
       'colored-circle',
       'icon',
+      'image',
+      'value-styled',
     ]),
     /**
      * Set initial value
@@ -139,6 +144,17 @@ class Select extends Component {
     );
   };
 
+  // type 'value-styled' rendering
+  renderValueStyled = (option) => {
+    return (
+      <div style={styles.itemWrapper}>
+        <div style={{...styles.labelTextOnly, ...{[this.props.styledProperty]: option.value}}}>
+          {option.label}
+        </div>
+      </div>
+    );
+  };
+
   // type 'colored' rendering
   renderColored = (option) => {
     return (
@@ -166,9 +182,9 @@ class Select extends Component {
     return (
       <div style={styles.itemWrapper}>
         <Icon
+          color={option.iconColor}
           icon={option.icon}
           size={this.props.iconSize || '18px'}
-          color={option.iconColor}
         />
         <div style={styles.label}>{option.label}</div>
       </div>
@@ -180,12 +196,12 @@ class Select extends Component {
     return (
       <div style={styles.itemWrapper}>
         <Thumb
-          image={option.image}
-          offlineEnabled={this.props.offlineEnabled}
-          localImg={option.localImg}
-          width={30}
           height={30}
           icon={this.props.fallbackIcon}
+          image={option.image}
+          localImg={option.localImg}
+          offlineEnabled={this.props.offlineEnabled}
+          width={30}
         />
         <div style={styles.label}>{option.label}</div>
       </div>
@@ -196,12 +212,12 @@ class Select extends Component {
     return (
       <div style={styles.itemWrapper}>
         <Thumb
-          image={option.image}
-          offlineEnabled={this.props.offlineEnabled}
-          localImg={option.localImg}
-          width={20}
           height={20}
           icon={this.props.fallbackIcon}
+          image={option.image}
+          localImg={option.localImg}
+          offlineEnabled={this.props.offlineEnabled}
+          width={20}
         />
         <div style={styles.label}>{option.label}</div>
       </div>
@@ -214,58 +230,69 @@ class Select extends Component {
     let select = {};
 
     switch (type) {
+      case 'value-styled':
+        select = (
+          <StyledSelect
+            {...other}
+            onChange={this.handleSelectChange}
+            optionRenderer={this.renderValueStyled}
+            value={this.state.value}
+            valueRenderer={this.renderValueStyled}
+          />
+        );
+        break;
       case 'colored':
         select = (
           <StyledSelect
             {...other}
-            value={this.state.value}
             onChange={this.handleSelectChange}
-            valueRenderer={this.renderColored}
             optionRenderer={this.renderColored}
+            value={this.state.value}
+            valueRenderer={this.renderColored}
           />
         );
         break;
       case 'colored-circle':
         select = (
           <StyledSelect
-            {...other}
-            value={this.state.value}
             onChange={this.handleSelectChange}
-            valueRenderer={this.renderColoredCircle}
             optionRenderer={this.renderColoredCircle}
+            value={this.state.value}
+            valueRenderer={this.renderColoredCircle}
+            {...other}
           />
         );
         break;
       case 'icon':
         select = (
           <StyledSelect
-            {...other}
-            value={this.state.value}
             onChange={this.handleSelectChange}
-            valueRenderer={this.renderIcon}
             optionRenderer={this.renderIcon}
+            value={this.state.value}
+            valueRenderer={this.renderIcon}
+            {...other}
           />
         );
         break;
       case 'image':
         select = (
           <StyledSelect
-            {...other}
-            value={this.state.value}
             onChange={this.handleSelectChange}
-            valueRenderer={this.renderImageValue}
             optionRenderer={this.renderImage}
+            value={this.state.value}
+            valueRenderer={this.renderImageValue}
+            {...other}
           />
         );
         break;
       default:
         select = (
           <StyledSelect
-            {...other}
-            value={this.state.value}
             onChange={this.handleSelectChange}
-            valueRenderer={this.renderDefault}
             optionRenderer={this.renderDefault}
+            value={this.state.value}
+            valueRenderer={this.renderDefault}
+            {...other}
           />
         );
     }
