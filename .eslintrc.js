@@ -136,7 +136,6 @@ module.exports = {
     'react/require-optimization': 'off',
     'babel/object-shorthand': 'off',
     'babel/new-cap': 'off',
-    "jest/no-exclusive-tests": 'error',
     "jest/no-identical-title": 'error',
   },
 };
