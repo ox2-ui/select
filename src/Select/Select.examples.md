@@ -50,6 +50,25 @@
       clearable={false}
     />
 
+### Type: value-styled -- Single
+
+    const textTransform = [
+      { label: 'None', value: 'none' },
+      { label: 'Capitalize', value: 'capitalize' },
+      { label: 'Uppercase', value: 'uppercase' },
+      { label: 'Lowercase', value: 'lowercase' },
+    ];
+
+    const handleUpdate = (value) => console.log('🐳', value);
+
+    <Select
+      onUpdate={handleUpdate}
+      options={textTransform}
+      placeholder={'Text transform'}
+      styledProperty={'textTransform'}
+      type={'value-styled'}
+    />
+
 ### Type: colored -- Single
 
     const StatusLabels = [

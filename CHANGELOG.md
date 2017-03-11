@@ -8,13 +8,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 5.0.0 - 2017-03-11
 ### Changed
-- [SelectField] BREAKING: no more default dark grey background fro `image type`, added `fallbackIconBg` `fallbackIconColor` props to help achive previuos behavior.
+- [Select] BREAKING: no more default dark grey background fro `image type`, added `fallbackIconBg` `fallbackIconColor` props to help achive previuos behavior.
 - [testing] updated to Jest 19
 - [npm] updated dependencies
 
 ## 4.3.0 - 2017-03-11
 ### Added
-- [SelectField] new `value-styled` type
+- [Select] new `value-styled` type
 
 ## 4.2.3 - 2017-02-25
 ### Changed
