@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## 5.0.2 - 2017-03-11
+### Added
+- [Select] new `itemStyle` prop
+
+
 ## 5.0.1 - 2017-03-11
 ### Changed
 - [Select] remove inline style font declaration
