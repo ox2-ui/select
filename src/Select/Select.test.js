@@ -109,3 +109,20 @@ it('renders value-styled type', () => {
 
   expect(wrapper).toMatchSnapshot();
 });
+
+it('renders with fallback icon', () => {
+  const wrapper = mount(
+    <Select
+      fallbackIcon={'user'}
+      fallbackIconBg={'neutral'}
+      fallbackIconColor={'white'}
+      onUpdate={handler}
+      options={People}
+      placeholder={'Select person'}
+      type={'image'}
+      value={'id3'}
+    />
+  );
+
+  expect(wrapper).toMatchSnapshot();
+});

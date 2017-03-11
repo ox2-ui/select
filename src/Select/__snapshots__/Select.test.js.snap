@@ -1231,7 +1231,7 @@ exports[`renders image type 1`] = `
                       width={20}
                     >
                       <div
-                        className="display:flex flex:items-center flex:content-center border:rounded color:neutral"
+                        className="display:flex flex:items-center flex:content-center border:rounded color:transparent"
                         style={
                           Object {
                             "WebkitFlex": "0 0 20px",
@@ -1944,6 +1944,338 @@ exports[`renders value-styled type 1`] = `
               >
                 <input
                   aria-activedescendant="react-select-8--value"
+                  aria-expanded="false"
+                  aria-haspopup="false"
+                  aria-owns=""
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  required={false}
+                  role="combobox"
+                  style={
+                    Object {
+                      "boxSizing": "content-box",
+                      "width": "5px",
+                    }
+                  }
+                  value=""
+                />
+                <div
+                  style={
+                    Object {
+                      "height": 0,
+                      "left": 0,
+                      "overflow": "scroll",
+                      "position": "absolute",
+                      "top": 0,
+                      "visibility": "hidden",
+                      "whiteSpace": "pre",
+                    }
+                  }
+                />
+              </div>
+            </AutosizeInput>
+          </span>
+          <span
+            aria-label="Clear value"
+            className="Select-clear-zone"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            title="Clear value"
+          >
+            <span
+              className="Select-clear"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "&times;",
+                }
+              }
+            />
+          </span>
+          <span
+            className="Select-arrow-zone"
+            onMouseDown={[Function]}
+          >
+            <span
+              className="Select-arrow"
+              onMouseDown={[Function]}
+            />
+          </span>
+        </div>
+      </div>
+    </Select>
+  </Styled(Select)>
+</Select>
+`;
+
+exports[`renders with fallback icon 1`] = `
+<Select
+  fallbackIcon="user"
+  fallbackIconBg="neutral"
+  fallbackIconColor="white"
+  onUpdate={[Function]}
+  options={
+    Array [
+      Object {
+        "image": "https://randomuser.me/api/portraits/women/50.jpg",
+        "label": "Jane Sanders",
+        "value": "id1",
+      },
+      Object {
+        "image": "https://randomuser.me/api/portraits/women/18.jpg",
+        "label": "Linda Garland",
+        "value": "id2",
+      },
+      Object {
+        "image": "https://randomuser.me/api/portraits/women/50.jpg",
+        "label": "Jane Offline",
+        "localImg": "ktLb8Hqxo28WdToq5.jpg",
+        "value": "id1",
+      },
+      Object {
+        "image": "",
+        "label": "No image",
+        "value": "id3",
+      },
+    ]
+  }
+  placeholder="Select person"
+  type="image"
+  value="id3"
+>
+  <Styled(Select)
+    fallbackIcon="user"
+    fallbackIconBg="neutral"
+    fallbackIconColor="white"
+    onChange={[Function]}
+    onUpdate={[Function]}
+    optionRenderer={[Function]}
+    options={
+      Array [
+        Object {
+          "image": "https://randomuser.me/api/portraits/women/50.jpg",
+          "label": "Jane Sanders",
+          "value": "id1",
+        },
+        Object {
+          "image": "https://randomuser.me/api/portraits/women/18.jpg",
+          "label": "Linda Garland",
+          "value": "id2",
+        },
+        Object {
+          "image": "https://randomuser.me/api/portraits/women/50.jpg",
+          "label": "Jane Offline",
+          "localImg": "ktLb8Hqxo28WdToq5.jpg",
+          "value": "id1",
+        },
+        Object {
+          "image": "",
+          "label": "No image",
+          "value": "id3",
+        },
+      ]
+    }
+    placeholder="Select person"
+    value="id3"
+    valueRenderer={[Function]}
+  >
+    <Select
+      addLabelText="Add \\"{label}\\"?"
+      arrowRenderer={[Function]}
+      autosize={true}
+      backspaceRemoves={true}
+      backspaceToRemoveMessage="Press backspace to remove {label}"
+      className="fUPKPg"
+      clearAllText="Clear all"
+      clearRenderer={[Function]}
+      clearValueText="Clear value"
+      clearable={true}
+      deleteRemoves={true}
+      delimiter=","
+      disabled={false}
+      escapeClearsValue={true}
+      fallbackIcon="user"
+      fallbackIconBg="neutral"
+      fallbackIconColor="white"
+      filterOptions={[Function]}
+      ignoreAccents={true}
+      ignoreCase={true}
+      inputProps={Object {}}
+      isLoading={false}
+      joinValues={false}
+      labelKey="label"
+      matchPos="any"
+      matchProp="any"
+      menuBuffer={0}
+      menuRenderer={[Function]}
+      multi={false}
+      noResultsText="No results found"
+      onBlurResetsInput={true}
+      onChange={[Function]}
+      onCloseResetsInput={true}
+      onUpdate={[Function]}
+      openAfterFocus={false}
+      optionComponent={[Function]}
+      optionRenderer={[Function]}
+      options={
+        Array [
+          Object {
+            "image": "https://randomuser.me/api/portraits/women/50.jpg",
+            "label": "Jane Sanders",
+            "value": "id1",
+          },
+          Object {
+            "image": "https://randomuser.me/api/portraits/women/18.jpg",
+            "label": "Linda Garland",
+            "value": "id2",
+          },
+          Object {
+            "image": "https://randomuser.me/api/portraits/women/50.jpg",
+            "label": "Jane Offline",
+            "localImg": "ktLb8Hqxo28WdToq5.jpg",
+            "value": "id1",
+          },
+          Object {
+            "image": "",
+            "label": "No image",
+            "value": "id3",
+          },
+        ]
+      }
+      pageSize={5}
+      placeholder="Select person"
+      required={false}
+      scrollMenuIntoView={true}
+      searchable={true}
+      simpleValue={false}
+      tabSelectsValue={true}
+      value="id3"
+      valueComponent={[Function]}
+      valueKey="value"
+      valueRenderer={[Function]}
+    >
+      <div
+        className="Select fUPKPg Select--single is-searchable has-value"
+      >
+        <div
+          className="Select-control"
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+        >
+          <span
+            className="Select-multi-value-wrapper"
+            id="react-select-9--value"
+          >
+            <Value
+              disabled={false}
+              id="react-select-9--value-item"
+              instancePrefix="react-select-9-"
+              onClick={null}
+              value={
+                Object {
+                  "image": "",
+                  "label": "No image",
+                  "value": "id3",
+                }
+              }
+            >
+              <div
+                className="Select-value"
+              >
+                <span
+                  aria-selected="true"
+                  className="Select-value-label"
+                  id="react-select-9--value-item"
+                  role="option"
+                >
+                  <div
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "display": "inline-flex",
+                        "fontFamily": "Roboto Condensed",
+                      }
+                    }
+                  >
+                    <Thumb
+                      color="neutral"
+                      height={20}
+                      icon="user"
+                      iconColor="white"
+                      image=""
+                      width={20}
+                    >
+                      <div
+                        className="display:flex flex:items-center flex:content-center border:rounded color:neutral"
+                        style={
+                          Object {
+                            "WebkitFlex": "0 0 20px",
+                            "flex": "0 0 20px",
+                            "height": "20px",
+                            "width": "20px",
+                          }
+                        }
+                      >
+                        <Icon
+                          className="text-color:white"
+                          icon="user"
+                          size="14px"
+                        >
+                          <span
+                            className="icon-user text-color:white"
+                            style={
+                              Object {
+                                "color": undefined,
+                                "fontSize": "14px",
+                              }
+                            }
+                          />
+                        </Icon>
+                      </div>
+                    </Thumb>
+                    <div
+                      style={
+                        Object {
+                          "fontSize": "16px",
+                          "paddingLeft": "7px",
+                        }
+                      }
+                    >
+                      No image
+                    </div>
+                  </div>
+                </span>
+              </div>
+            </Value>
+            <AutosizeInput
+              aria-activedescendant="react-select-9--value"
+              aria-expanded="false"
+              aria-haspopup="false"
+              aria-owns=""
+              className="Select-input"
+              minWidth="5"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              required={false}
+              role="combobox"
+              value=""
+            >
+              <div
+                className="Select-input"
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
+              >
+                <input
+                  aria-activedescendant="react-select-9--value"
                   aria-expanded="false"
                   aria-haspopup="false"
                   aria-owns=""

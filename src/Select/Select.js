@@ -68,6 +68,14 @@ class Select extends Component {
      */
     fallbackIcon: PropTypes.string,
     /**
+     * Backgroudn color for fallback icon
+     */
+    fallbackIconBg: PropTypes.string,
+    /**
+     * Fallback icon color
+     */
+    fallbackIconColor: PropTypes.string,
+    /**
      * Icon size (for type 'icon') default 14px
      */
     iconSize: PropTypes.string,
@@ -196,8 +204,10 @@ class Select extends Component {
     return (
       <div style={styles.itemWrapper}>
         <Thumb
+          color={this.props.fallbackIconBg}
           height={30}
           icon={this.props.fallbackIcon}
+          iconColor={this.props.fallbackIconColor}
           image={option.image}
           localImg={option.localImg}
           offlineEnabled={this.props.offlineEnabled}
@@ -212,8 +222,10 @@ class Select extends Component {
     return (
       <div style={styles.itemWrapper}>
         <Thumb
+          color={this.props.fallbackIconBg}
           height={20}
           icon={this.props.fallbackIcon}
+          iconColor={this.props.fallbackIconColor}
           image={option.image}
           localImg={option.localImg}
           offlineEnabled={this.props.offlineEnabled}

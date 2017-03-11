@@ -156,6 +156,8 @@ storiesOf('Select', module)
   .add('type: image 2', () => (
     <Select
       fallbackIcon={'user'}
+      fallbackIconBg={'neutral'}
+      fallbackIconColor={'white'}
       offlineEnabled={true}
       onUpdate={handler}
       options={People}
@@ -166,6 +168,8 @@ storiesOf('Select', module)
   .add('type: image 2 multi', () => (
     <Select
       fallbackIcon={'user'}
+      fallbackIconBg={'neutral'}
+      fallbackIconColor={'white'}
       multi={true}
       offlineEnabled={true}
       onUpdate={handler}
