@@ -79,6 +79,10 @@ class Select extends Component {
      */
     iconSize: PropTypes.string,
     /**
+     * Override inline-styles of the item element
+     */
+    itemStyle: PropTypes.object,
+    /**
      * If set to True enables multi select component
      */
     multi: PropTypes.bool,
@@ -143,7 +147,7 @@ class Select extends Component {
   // type 'default' rendering
   renderDefault = (option) => {
     return (
-      <div style={styles.itemWrapper}>
+      <div style={{...styles.itemWrapper, ...this.props.itemStyle}}>
         <div style={styles.labelTextOnly}>
           {option.label}
         </div>
@@ -154,7 +158,7 @@ class Select extends Component {
   // type 'value-styled' rendering
   renderValueStyled = (option) => {
     return (
-      <div style={styles.itemWrapper}>
+      <div style={{...styles.itemWrapper, ...this.props.itemStyle}}>
         <div style={{...styles.labelTextOnly, ...{[this.props.styledProperty]: option.value}}}>
           {option.label}
         </div>
@@ -165,7 +169,7 @@ class Select extends Component {
   // type 'colored' rendering
   renderColored = (option) => {
     return (
-      <div style={styles.itemWrapper}>
+      <div style={{...styles.itemWrapper, ...this.props.itemStyle}}>
         <div style={{...{color: option.color}, ...styles.labelTextOnly}}>
           {option.label}
         </div>
@@ -177,7 +181,7 @@ class Select extends Component {
   // type 'colored-circle' rendering
   renderColoredCircle = (option) => {
     return (
-      <div style={styles.itemWrapper}>
+      <div style={{...styles.itemWrapper, ...this.props.itemStyle}}>
         <div style={{...{backgroundColor: option.color}, ...styles.circle}} />
         <div style={styles.labelColoredCircle}>{option.label}</div>
       </div>
@@ -187,7 +191,7 @@ class Select extends Component {
   // type 'icon' rendering
   renderIcon = (option) => {
     return (
-      <div style={styles.itemWrapper}>
+      <div style={{...styles.itemWrapper, ...this.props.itemStyle}}>
         <Icon
           color={option.iconColor}
           icon={option.icon}
@@ -201,7 +205,7 @@ class Select extends Component {
   // type 'image' rendering
   renderImage = (option) => {
     return (
-      <div style={styles.itemWrapper}>
+      <div style={{...styles.itemWrapper, ...this.props.itemStyle}}>
         <Thumb
           color={this.props.fallbackIconBg}
           height={30}
@@ -219,7 +223,7 @@ class Select extends Component {
 
   renderImageValue = (option) => {
     return (
-      <div style={styles.itemWrapper}>
+      <div style={{...styles.itemWrapper, ...this.props.itemStyle}}>
         <Thumb
           color={this.props.fallbackIconBg}
           height={20}

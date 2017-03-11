@@ -5,6 +5,7 @@ import Select from './Select';
 import { Groups,
   Apps,
   Categories,
+  fontWeight,
   People,
   StatusLabels,
   Tags,
@@ -121,6 +122,22 @@ it('renders with fallback icon', () => {
       placeholder={'Select person'}
       type={'image'}
       value={'id3'}
+    />
+  );
+
+  expect(wrapper).toMatchSnapshot();
+});
+
+it('renders with custom item styles', () => {
+  const wrapper = mount(
+    <Select
+      itemStyle={{fontFamily: 'Roboto'}}
+      onUpdate={handler}
+      options={fontWeight}
+      placeholder={'Weight'}
+      styledProperty={'fontWeight'}
+      type={'value-styled'}
+      value={'700'}
     />
   );
 

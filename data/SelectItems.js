@@ -11,6 +11,12 @@ export const textTransform = [
   { label: 'Lowercase', value: 'lowercase' },
 ];
 
+export const fontWeight = [
+  { label: 'Light', value: '300' },
+  { label: 'Regular', value: '400' },
+  { label: 'Bold', value: '700' },
+];
+
 export const Apps = [
   { label: 'Aci', value: 'id1', image: 'http://imgur.com/N2LoYmv.png' },
   { label: 'NCS', value: 'id2', image: 'http://imgur.com/AN63ghL.png' },

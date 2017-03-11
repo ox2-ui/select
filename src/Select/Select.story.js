@@ -4,6 +4,7 @@ import Select from './Select';
 import { Groups,
   Apps,
   Categories,
+  fontWeight,
   People,
   StatusLabels,
   Tags,
@@ -70,6 +71,27 @@ storiesOf('Select', module)
       styledProperty={'textTransform'}
       type={'value-styled'}
       value={'uppercase'}
+    />
+  ))
+  .add('type: value-styled 2', () => (
+    <Select
+      itemStyle={{fontFamily: 'Roboto'}}
+      onUpdate={handler}
+      options={fontWeight}
+      placeholder={'Weight'}
+      styledProperty={'fontWeight'}
+      type={'value-styled'}
+    />
+  ))
+  .add('type: value-styled - selected 2', () => (
+    <Select
+      itemStyle={{fontFamily: 'Roboto'}}
+      onUpdate={handler}
+      options={fontWeight}
+      placeholder={'Weight'}
+      styledProperty={'fontWeight'}
+      type={'value-styled'}
+      value={'700'}
     />
   ))
   .add('type: colored', () => (
