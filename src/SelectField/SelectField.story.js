@@ -31,6 +31,13 @@ storiesOf('SelectField', module)
       value={'attendies'}
     />
   ))
+  .add('with error', () => (
+    <SelectField
+      hasError={true}
+      onUpdate={handler}
+      options={Groups}
+    />
+  ))
   .add('multi', () => (
     <SelectField
       multi={true}

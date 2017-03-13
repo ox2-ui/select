@@ -1,14 +1,17 @@
 import Select from '../Select';
 import styled from 'styled-components';
+import { positive } from '@ox2/colors-flat';
 
 /**
  * SelectField Component
  */
 const SelectField = styled(Select)`
   .Select-control {
-    border: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
     border-radius: 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom-width: ${props => props.hasError ? '2px' : '1px'};
   }
 
   .Select-placeholder, &.Select--single > .Select-control .Select-value {
@@ -17,7 +20,7 @@ const SelectField = styled(Select)`
   }
 
   &.is-focused:not(.is-open) > .Select-control {
-    border-color: hsla(214, 70%, 53%, 1);
+    border-color: ${positive};
     box-shadow: none;
   }
 

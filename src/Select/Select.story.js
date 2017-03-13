@@ -29,6 +29,13 @@ storiesOf('Select', module)
       value={'attendies'}
     />
   ))
+  .add('with error', () => (
+    <Select
+      hasError={true}
+      onUpdate={handler}
+      options={Groups}
+    />
+  ))
   .add('multi', () => (
     <Select
       multi={true}

@@ -3,6 +3,7 @@ import ReactSelect from 'react-select';
 import Icon from '@ox2/icon/Icon';
 import Thumb from '@ox2/ui/Thumb';
 import styled from 'styled-components';
+import { neutral_dark, critical, neutral_faded } from '@ox2/colors-flat';
 
 const styles = {
   circle: {
@@ -33,6 +34,10 @@ const StyledSelect = styled(ReactSelect)`
   font-family: Roboto Condensed;
   font-size: 15px;
 
+  .Select-control {
+    border: ${props => props.hasError ? `2px solid ${critical}` : `1px solid ${neutral_faded}`};
+  }
+
   &.Select--multi .Select-value {
     margin-top: 2px;
   }
@@ -44,7 +49,7 @@ const StyledSelect = styled(ReactSelect)`
     height: 32px;
   }
   &.is-focused:not(.is-open) > .Select-control {
-    border-color: hsla(0, 0%, 30%, 1);
+    border-color: ${props => props.hasError ? critical : neutral_dark};
     box-shadow: none;
   }
 
@@ -74,6 +79,10 @@ class Select extends Component {
      * Fallback icon color
      */
     fallbackIconColor: PropTypes.string,
+    /**
+     * Is set to true when failing validation e.g. form
+     */
+    hasError: PropTypes.bool,
     /**
      * Icon size (for type 'icon') default 14px
      */
@@ -240,7 +249,7 @@ class Select extends Component {
   };
 
   render() {
-    const { type, ...other } = this.props;
+    const { type, hasError, ...other } = this.props;
 
     let select = {};
 
@@ -249,6 +258,7 @@ class Select extends Component {
         select = (
           <StyledSelect
             {...other}
+            hasError={hasError}
             onChange={this.handleSelectChange}
             optionRenderer={this.renderValueStyled}
             value={this.state.value}
@@ -260,6 +270,7 @@ class Select extends Component {
         select = (
           <StyledSelect
             {...other}
+            hasError={hasError}
             onChange={this.handleSelectChange}
             optionRenderer={this.renderColored}
             value={this.state.value}
@@ -270,6 +281,7 @@ class Select extends Component {
       case 'colored-circle':
         select = (
           <StyledSelect
+            hasError={hasError}
             onChange={this.handleSelectChange}
             optionRenderer={this.renderColoredCircle}
             value={this.state.value}
@@ -281,6 +293,7 @@ class Select extends Component {
       case 'icon':
         select = (
           <StyledSelect
+            hasError={hasError}
             onChange={this.handleSelectChange}
             optionRenderer={this.renderIcon}
             value={this.state.value}
@@ -292,6 +305,7 @@ class Select extends Component {
       case 'image':
         select = (
           <StyledSelect
+            hasError={hasError}
             onChange={this.handleSelectChange}
             optionRenderer={this.renderImage}
             value={this.state.value}
@@ -303,6 +317,7 @@ class Select extends Component {
       default:
         select = (
           <StyledSelect
+            hasError={hasError}
             onChange={this.handleSelectChange}
             optionRenderer={this.renderDefault}
             value={this.state.value}

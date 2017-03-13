@@ -62,6 +62,7 @@
     "npm": "^3.0.0"
   },
   "dependencies": {
+    "@ox2/colors-flat": "^0.0.1",
     "@ox2/icon": "^1.0.0",
     "@ox2/ui": "^0.21.0",
     "react-select": "^1.0.0-rc.2",

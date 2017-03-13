@@ -59,7 +59,7 @@ exports[`renders colored type 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="fUPKPg"
+      className="gVPyvI"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -120,7 +120,7 @@ exports[`renders colored type 1`] = `
       valueRenderer={[Function]}
     >
       <div
-        className="Select fUPKPg Select--single is-searchable has-value"
+        className="Select gVPyvI Select--single is-searchable has-value"
       >
         <div
           className="Select-control"
@@ -327,7 +327,7 @@ exports[`renders colored-circle type 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="fUPKPg"
+      className="gVPyvI"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -388,7 +388,7 @@ exports[`renders colored-circle type 1`] = `
       valueRenderer={[Function]}
     >
       <div
-        className="Select fUPKPg Select--single is-searchable has-value"
+        className="Select gVPyvI Select--single is-searchable has-value"
       >
         <div
           className="Select-control"
@@ -597,7 +597,7 @@ exports[`renders correctly 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="fUPKPg"
+      className="gVPyvI"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -655,7 +655,7 @@ exports[`renders correctly 1`] = `
       valueRenderer={[Function]}
     >
       <div
-        className="Select fUPKPg Select--single is-searchable"
+        className="Select gVPyvI Select--single is-searchable"
       >
         <div
           className="Select-control"
@@ -823,7 +823,7 @@ exports[`renders icon type 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="fUPKPg"
+      className="gVPyvI"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -893,7 +893,7 @@ exports[`renders icon type 1`] = `
       valueRenderer={[Function]}
     >
       <div
-        className="Select fUPKPg Select--single is-searchable has-value"
+        className="Select gVPyvI Select--single is-searchable has-value"
       >
         <div
           className="Select-control"
@@ -1116,7 +1116,7 @@ exports[`renders image type 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="fUPKPg"
+      className="gVPyvI"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -1177,7 +1177,7 @@ exports[`renders image type 1`] = `
       valueRenderer={[Function]}
     >
       <div
-        className="Select fUPKPg Select--single is-searchable has-value"
+        className="Select gVPyvI Select--single is-searchable has-value"
       >
         <div
           className="Select-control"
@@ -1435,7 +1435,7 @@ exports[`renders multi selected 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="fUPKPg"
+      className="gVPyvI"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -1510,7 +1510,7 @@ exports[`renders multi selected 1`] = `
       valueRenderer={[Function]}
     >
       <div
-        className="Select fUPKPg Select--multi is-searchable has-value"
+        className="Select gVPyvI Select--multi is-searchable has-value"
       >
         <div
           className="Select-control"
@@ -1793,7 +1793,7 @@ exports[`renders value-styled type 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="fUPKPg"
+      className="gVPyvI"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -1856,7 +1856,7 @@ exports[`renders value-styled type 1`] = `
       valueRenderer={[Function]}
     >
       <div
-        className="Select fUPKPg Select--single is-searchable has-value"
+        className="Select gVPyvI Select--single is-searchable has-value"
       >
         <div
           className="Select-control"
@@ -2068,7 +2068,7 @@ exports[`renders with custom item styles 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="fUPKPg"
+      className="gVPyvI"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -2132,7 +2132,7 @@ exports[`renders with custom item styles 1`] = `
       valueRenderer={[Function]}
     >
       <div
-        className="Select fUPKPg Select--single is-searchable has-value"
+        className="Select gVPyvI Select--single is-searchable has-value"
       >
         <div
           className="Select-control"
@@ -2357,7 +2357,7 @@ exports[`renders with fallback icon 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="fUPKPg"
+      className="gVPyvI"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -2427,7 +2427,7 @@ exports[`renders with fallback icon 1`] = `
       valueRenderer={[Function]}
     >
       <div
-        className="Select fUPKPg Select--single is-searchable has-value"
+        className="Select gVPyvI Select--single is-searchable has-value"
       >
         <div
           className="Select-control"
