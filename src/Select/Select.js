@@ -3,7 +3,7 @@ import ReactSelect from 'react-select';
 import Icon from '@ox2/icon/Icon';
 import Thumb from '@ox2/ui/Thumb';
 import styled from 'styled-components';
-import { neutral_dark, critical, neutral_faded } from '@ox2/colors-flat';
+import { neutral_dark, critical, neutral_faded } from '@ox2/colors';
 
 const styles = {
   circle: {

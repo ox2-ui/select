@@ -1,6 +1,6 @@
 import Select from '../Select';
 import styled from 'styled-components';
-import { positive } from '@ox2/colors-flat';
+import { positive } from '@ox2/colors';
 
 /**
  * SelectField Component
