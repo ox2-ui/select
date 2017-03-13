@@ -10,8 +10,8 @@
     const handleUpdate = (value) => console.log('🐳', value);
 
     <Select
-      options={Groups}
       onUpdate={handleUpdate}
+      options={Groups}
       placeholder={'Select something'}
     />
 
@@ -26,11 +26,28 @@
     const handleUpdate = (value) => console.log('🐳', value);
 
     <Select
-      options={Groups}
-      onUpdate={handleUpdate}
-      placeholder={'Select something'}
       multi={true}
+      onUpdate={handleUpdate}
+      options={Groups}
+      placeholder={'Select something'}
       simpleValue={true}
+    />
+
+### Has validation error
+
+    const Groups = [
+      { label: 'Speakers', value: 'speakers' },
+      { label: 'Attendies', value: 'attendies' },
+      { label: 'Moderators', value: 'moderators' },
+    ];
+
+    const handleUpdate = (value) => console.log('🐳', value);
+
+    <Select
+      hasError={true}
+      onUpdate={handleUpdate}
+      options={Groups}
+      placeholder={'Select something'}
     />
 
 ### No clear button
@@ -44,10 +61,10 @@
     const handleUpdate = (value) => console.log('🐳', value);
 
     <Select
-      value={'attendies'}
-      options={Groups}
-      onUpdate={handleUpdate}
       clearable={false}
+      onUpdate={handleUpdate}
+      options={Groups}
+      value={'attendies'}
     />
 
 ### Type: value-styled -- Single
@@ -80,8 +97,8 @@
     const handleUpdate = (value) => console.log('🐳', value);
 
     <Select
-      options={StatusLabels}
       onUpdate={handleUpdate}
+      options={StatusLabels}
       placeholder={'Filter by status'}
       type={'colored'}
     />
@@ -97,12 +114,12 @@
     const handleUpdate = (value) => console.log('🐳', value);
 
     <Select
-      options={StatusLabels}
-      onUpdate={handleUpdate}
-      placeholder={'Filter by status'}
-      type={'colored'}
       multi={true}
+      onUpdate={handleUpdate}
+      options={StatusLabels}
+      placeholder={'Filter by status'}
       simpleValue={true}
+      type={'colored'}
     />
 
 ### Type: colored-circle -- Single
@@ -116,8 +133,8 @@
     const handleUpdate = (value) => console.log('🐳', value);
 
     <Select
-      options={Categories}
       onUpdate={handleUpdate}
+      options={Categories}
       placeholder={'Filter by category'}
       type={'colored-circle'}
     />
@@ -133,12 +150,12 @@
     const handleUpdate = (value) => console.log('🐳', value);
 
     <Select
-      options={Categories}
-      onUpdate={handleUpdate}
-      placeholder={'Filter by category'}
-      type={'colored-circle'}
       multi={true}
+      onUpdate={handleUpdate}
+      options={Categories}
+      placeholder={'Filter by category'}
       simpleValue={true}
+      type={'colored-circle'}
     />
 
 ### Type: image -- Single
@@ -152,8 +169,8 @@
     const handleUpdate = (value) => console.log('🐳', value);
 
     <Select
-      options={Apps}
       onUpdate={handleUpdate}
+      options={Apps}
       placeholder={'Select app'}
       type={'image'}
     />
@@ -169,12 +186,12 @@
     const handleUpdate = (value) => console.log('🐳', value);
 
     <Select
-      options={Apps}
-      onUpdate={handleUpdate}
-      placeholder={'Select app'}
-      type={'image'}
       multi={true}
+      onUpdate={handleUpdate}
+      options={Apps}
+      placeholder={'Select app'}
       simpleValue={true}
+      type={'image'}
     />
 
 ### Type: icon -- Single
@@ -189,8 +206,8 @@
     const handleUpdate = (value) => console.log('🐳', value);
 
     <Select
-      options={Types}
       onUpdate={handleUpdate}
+      options={Types}
       placeholder={'Filter by note type'}
       type={'icon'}
     />
@@ -206,12 +223,12 @@
     const handleUpdate = (value) => console.log('🐳', value);
 
     <Select
-      options={Types}
-      onUpdate={handleUpdate}
-      placeholder={'Filter by note type'}
-      type={'icon'}
       multi={true}
+      onUpdate={handleUpdate}
+      options={Types}
+      placeholder={'Filter by note type'}
       simpleValue={true}
+      type={'icon'}
     />
 
 ### Type: icon -- Large icon
@@ -226,9 +243,9 @@
     const handleUpdate = (value) => console.log('🐳', value);
 
     <Select
-      options={Types}
+      iconSize={'25px'}
       onUpdate={handleUpdate}
+      options={Types}
       placeholder={'Filter by note type'}
       type={'icon'}
-      iconSize={'25px'}
     />

@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## 5.1.0 - 2017-03-13
+### Added
+[Select, SelectField] hasError prop added to indicate form validation errors
+
 ## 5.0.2 - 2017-03-11
 ### Added
 - [Select] new `itemStyle` prop
