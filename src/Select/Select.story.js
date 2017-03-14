@@ -14,8 +14,158 @@ import { Groups,
 
 const handler = (value) => console.log('🐳', value); // eslint-disable-line no-console
 
+const Wrapper = ({ children }) => <div style={{margin: '25px 10px'}}>{children}</div>; // eslint-disable-line react/prop-types
 
 storiesOf('Select', module)
+  .add('compare all', () => (
+    <div>
+      <Wrapper>
+        <Select
+          onUpdate={handler}
+          options={Groups}
+        />
+      </Wrapper>
+      <Wrapper>
+        <Select
+          onUpdate={handler}
+          options={Groups}
+          value={'attendies'}
+        />
+      </Wrapper>
+      <Wrapper>
+        <Select
+          hasError={true}
+          onUpdate={handler}
+          options={Groups}
+        />
+      </Wrapper>
+      <Wrapper>
+        <Select
+          multi={true}
+          onUpdate={handler}
+          options={Tags}
+          simpleValue={true}
+          value={['important', 'warning']}
+        />
+      </Wrapper>
+      <Wrapper>
+        <Select
+          onUpdate={handler}
+          options={textTransform}
+          placeholder={'Text transform'}
+          styledProperty={'textTransform'}
+          type={'value-styled'}
+          value={'uppercase'}
+        />
+      </Wrapper>
+      <Wrapper>
+        <Select
+          itemStyle={{fontFamily: 'Roboto'}}
+          onUpdate={handler}
+          options={fontWeight}
+          placeholder={'Weight'}
+          styledProperty={'fontWeight'}
+          type={'value-styled'}
+          value={'700'}
+        />
+      </Wrapper>
+      <Wrapper>
+        <Select
+          onUpdate={handler}
+          options={StatusLabels}
+          placeholder={'Filter by status'}
+          type={'colored'}
+          value={'published'}
+        />
+      </Wrapper>
+      <Wrapper>
+        <Select
+          multi={true}
+          onUpdate={handler}
+          options={StatusLabels}
+          placeholder={'Filter by status'}
+          simpleValue={true}
+          type={'colored'}
+          value={['rejected', 'published']}
+        />
+      </Wrapper>
+      <Wrapper>
+        <Select
+          onUpdate={handler}
+          options={Categories}
+          placeholder={'Filter by category'}
+          type={'colored-circle'}
+          value={'session'}
+        />
+      </Wrapper>
+      <Wrapper>
+        <Select
+          multi={true}
+          onUpdate={handler}
+          options={Categories}
+          placeholder={'Filter by category'}
+          simpleValue={true}
+          type={'colored-circle'}
+          value={['break', 'workshop']}
+        />
+      </Wrapper>
+      <Wrapper>
+        <Select
+          onUpdate={handler}
+          options={Apps}
+          placeholder={'Select app'}
+          type={'image'}
+          value={'id2'}
+        />
+      </Wrapper>
+      <Wrapper>
+        <Select
+          multi={true}
+          onUpdate={handler}
+          options={Apps}
+          placeholder={'Select app'}
+          simpleValue={true}
+          type={'image'}
+          value={['id1', 'id2']}
+        />
+      </Wrapper>
+      <Wrapper>
+        <Select
+          fallbackIcon={'user'}
+          fallbackIconBg={'neutral'}
+          fallbackIconColor={'white'}
+          multi={true}
+          offlineEnabled={true}
+          onUpdate={handler}
+          options={People}
+          placeholder={'Select person'}
+          simpleValue={true}
+          type={'image'}
+          value={['id1', 'id3', 'id2']}
+        />
+      </Wrapper>
+      <Wrapper>
+        <Select
+          onUpdate={handler}
+          options={Types}
+          placeholder={'Filter by note type'}
+          type={'icon'}
+          value={'Tickets'}
+        />
+      </Wrapper>
+      <Wrapper>
+        <Select
+          multi={true}
+          onUpdate={handler}
+          options={Types}
+          placeholder={'Filter by note type'}
+          simpleValue={true}
+          type={'icon'}
+          value={['Tickets', 'Sessions']}
+        />
+      </Wrapper>
+    </div>
+  ))
   .add('single', () => (
     <Select
       onUpdate={handler}
@@ -90,7 +240,7 @@ storiesOf('Select', module)
       type={'value-styled'}
     />
   ))
-  .add('type: value-styled - selected 2', () => (
+  .add('type: value-styled 2 - selected', () => (
     <Select
       itemStyle={{fontFamily: 'Roboto'}}
       onUpdate={handler}
@@ -128,6 +278,17 @@ storiesOf('Select', module)
       type={'colored'}
     />
   ))
+  .add('type: colored multi - selected', () => (
+    <Select
+      multi={true}
+      onUpdate={handler}
+      options={StatusLabels}
+      placeholder={'Filter by status'}
+      simpleValue={true}
+      type={'colored'}
+      value={['rejected', 'published']}
+    />
+  ))
   .add('type: colored-circle', () => (
     <Select
       onUpdate={handler}
@@ -153,6 +314,17 @@ storiesOf('Select', module)
       placeholder={'Filter by category'}
       simpleValue={true}
       type={'colored-circle'}
+    />
+  ))
+  .add('type: colored-circle multi - selected', () => (
+    <Select
+      multi={true}
+      onUpdate={handler}
+      options={Categories}
+      placeholder={'Filter by category'}
+      simpleValue={true}
+      type={'colored-circle'}
+      value={['break', 'workshop']}
     />
   ))
   .add('type: image', () => (
@@ -182,6 +354,17 @@ storiesOf('Select', module)
       type={'image'}
     />
   ))
+  .add('type: image multi - selected', () => (
+    <Select
+      multi={true}
+      onUpdate={handler}
+      options={Apps}
+      placeholder={'Select app'}
+      simpleValue={true}
+      type={'image'}
+      value={['id1', 'id2']}
+    />
+  ))
   .add('type: image 2', () => (
     <Select
       fallbackIcon={'user'}
@@ -206,6 +389,21 @@ storiesOf('Select', module)
       placeholder={'Select person'}
       simpleValue={true}
       type={'image'}
+    />
+  ))
+  .add('type: image 2 multi - selected', () => (
+    <Select
+      fallbackIcon={'user'}
+      fallbackIconBg={'neutral'}
+      fallbackIconColor={'white'}
+      multi={true}
+      offlineEnabled={true}
+      onUpdate={handler}
+      options={People}
+      placeholder={'Select person'}
+      simpleValue={true}
+      type={'image'}
+      value={['id1', 'id3', 'id2']}
     />
   ))
   .add('type: icon', () => (
@@ -235,24 +433,14 @@ storiesOf('Select', module)
       type={'icon'}
     />
   ))
-  .add('type: icon & large', () => (
+  .add('type: icon multi - selected', () => (
     <Select
-      iconSize={'25px'}
-      onUpdate={handler}
-      options={Types}
-      placeholder={'Filter by note type'}
-      type={'icon'}
-    />
-  ))
-  .add('type: icon & large & multi', () => (
-    <Select
-      iconSize={'25px'}
       multi={true}
       onUpdate={handler}
       options={Types}
       placeholder={'Filter by note type'}
       simpleValue={true}
-      style={{height: '38px'}}
       type={'icon'}
+      value={['Tickets', 'Sessions']}
     />
   ));

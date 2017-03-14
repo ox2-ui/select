@@ -86,7 +86,7 @@ class Select extends Component {
     /**
      * Icon size (for type 'icon') default 14px
      */
-    iconSize: PropTypes.string,
+    iconSize: PropTypes.string, // XXX Deprecate ?
     /**
      * Override inline-styles of the item element
      */
