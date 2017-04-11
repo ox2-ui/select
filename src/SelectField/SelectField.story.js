@@ -1,7 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import SelectField from './SelectField';
-import { Groups,
+import {
+  Groups,
   Apps,
   Categories,
   fontWeight,
@@ -16,18 +17,17 @@ import { Groups,
 //      This a copy of Selext.story.js with changed component name
 //
 
-const handler = (value) => console.log('🐳', value); // eslint-disable-line no-console
+const handler = value => console.log('🐳', value); // eslint-disable-line no-console
 
-const Wrapper = ({ children }) => <div style={{margin: '25px 10px'}}>{children}</div>; // eslint-disable-line react/prop-types
+const Wrapper = ({ children }) => (
+  <div style={{ margin: '25px 10px' }}>{children}</div>
+); // eslint-disable-line react/prop-types
 
 storiesOf('SelectField', module)
   .add('compare all', () => (
     <div>
       <Wrapper>
-        <SelectField
-          onUpdate={handler}
-          options={Groups}
-        />
+        <SelectField onUpdate={handler} options={Groups} />
       </Wrapper>
       <Wrapper>
         <SelectField
@@ -64,7 +64,7 @@ storiesOf('SelectField', module)
       </Wrapper>
       <Wrapper>
         <SelectField
-          itemStyle={{fontFamily: 'Roboto'}}
+          itemStyle={{ fontFamily: 'Roboto' }}
           onUpdate={handler}
           options={fontWeight}
           placeholder={'Weight'}
@@ -171,10 +171,7 @@ storiesOf('SelectField', module)
     </div>
   ))
   .add('single', () => (
-    <SelectField
-      onUpdate={handler}
-      options={Groups}
-    />
+    <SelectField onUpdate={handler} options={Groups} />
   ))
   .add('selected', () => (
     <SelectField
@@ -236,7 +233,7 @@ storiesOf('SelectField', module)
   ))
   .add('type: value-styled 2', () => (
     <SelectField
-      itemStyle={{fontFamily: 'Roboto'}}
+      itemStyle={{ fontFamily: 'Roboto' }}
       onUpdate={handler}
       options={fontWeight}
       placeholder={'Weight'}
@@ -246,7 +243,7 @@ storiesOf('SelectField', module)
   ))
   .add('type: value-styled 2 - selected', () => (
     <SelectField
-      itemStyle={{fontFamily: 'Roboto'}}
+      itemStyle={{ fontFamily: 'Roboto' }}
       onUpdate={handler}
       options={fontWeight}
       placeholder={'Weight'}

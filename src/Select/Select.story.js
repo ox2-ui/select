@@ -1,7 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import Select from './Select';
-import { Groups,
+import {
+  Groups,
   Apps,
   Categories,
   fontWeight,
@@ -12,18 +13,17 @@ import { Groups,
   Types,
 } from '../../data/SelectItems';
 
-const handler = (value) => console.log('🐳', value); // eslint-disable-line no-console
+const handler = value => console.log('🐳', value); // eslint-disable-line no-console
 
-const Wrapper = ({ children }) => <div style={{margin: '25px 10px'}}>{children}</div>; // eslint-disable-line react/prop-types
+const Wrapper = ({ children }) => (
+  <div style={{ margin: '25px 10px' }}>{children}</div>
+); // eslint-disable-line react/prop-types
 
 storiesOf('Select', module)
   .add('compare all', () => (
     <div>
       <Wrapper>
-        <Select
-          onUpdate={handler}
-          options={Groups}
-        />
+        <Select onUpdate={handler} options={Groups} />
       </Wrapper>
       <Wrapper>
         <Select
@@ -60,7 +60,7 @@ storiesOf('Select', module)
       </Wrapper>
       <Wrapper>
         <Select
-          itemStyle={{fontFamily: 'Roboto'}}
+          itemStyle={{ fontFamily: 'Roboto' }}
           onUpdate={handler}
           options={fontWeight}
           placeholder={'Weight'}
@@ -167,10 +167,7 @@ storiesOf('Select', module)
     </div>
   ))
   .add('single', () => (
-    <Select
-      onUpdate={handler}
-      options={Groups}
-    />
+    <Select onUpdate={handler} options={Groups} />
   ))
   .add('selected', () => (
     <Select
@@ -232,7 +229,7 @@ storiesOf('Select', module)
   ))
   .add('type: value-styled 2', () => (
     <Select
-      itemStyle={{fontFamily: 'Roboto'}}
+      itemStyle={{ fontFamily: 'Roboto' }}
       onUpdate={handler}
       options={fontWeight}
       placeholder={'Weight'}
@@ -242,7 +239,7 @@ storiesOf('Select', module)
   ))
   .add('type: value-styled 2 - selected', () => (
     <Select
-      itemStyle={{fontFamily: 'Roboto'}}
+      itemStyle={{ fontFamily: 'Roboto' }}
       onUpdate={handler}
       options={fontWeight}
       placeholder={'Weight'}

@@ -3,7 +3,11 @@ import ReactSelect from 'react-select';
 import Icon from '@ox2/icon/Icon';
 import Thumb from '@ox2/ui/Thumb';
 import styled from 'styled-components';
-import { neutral_dark, critical, neutral_faded } from '@ox2/colors';
+import {
+  neutral_dark,
+  critical,
+  neutral_faded,
+} from '@ox2/colors';
 
 const styles = {
   circle: {
@@ -135,13 +139,13 @@ class Select extends Component {
     value: this.props.value || '',
   };
 
-  componentWillReceiveProps = (nextProps) => {
+  componentWillReceiveProps = nextProps => {
     if (nextProps.value !== this.state.value) {
       this.setState({ value: nextProps.value });
     }
-  }
+  };
 
-  handleSelectChange = (value) => {
+  handleSelectChange = value => {
     if (this.props.onUpdate) {
       if (this.props.multi) {
         this.props.onUpdate(value ? value.split(',') : []);
@@ -152,11 +156,15 @@ class Select extends Component {
     this.setState({ value });
   };
 
-
   // type 'default' rendering
-  renderDefault = (option) => {
+  renderDefault = option => {
     return (
-      <div style={{...styles.itemWrapper, ...this.props.itemStyle}}>
+      <div
+        style={{
+          ...styles.itemWrapper,
+          ...this.props.itemStyle,
+        }}
+      >
         <div style={styles.labelTextOnly}>
           {option.label}
         </div>
@@ -165,10 +173,22 @@ class Select extends Component {
   };
 
   // type 'value-styled' rendering
-  renderValueStyled = (option) => {
+  renderValueStyled = option => {
     return (
-      <div style={{...styles.itemWrapper, ...this.props.itemStyle}}>
-        <div style={{...styles.labelTextOnly, ...{[this.props.styledProperty]: option.value}}}>
+      <div
+        style={{
+          ...styles.itemWrapper,
+          ...this.props.itemStyle,
+        }}
+      >
+        <div
+          style={{
+            ...styles.labelTextOnly,
+            ...{
+              [this.props.styledProperty]: option.value,
+            },
+          }}
+        >
           {option.label}
         </div>
       </div>
@@ -176,31 +196,57 @@ class Select extends Component {
   };
 
   // type 'colored' rendering
-  renderColored = (option) => {
+  renderColored = option => {
     return (
-      <div style={{...styles.itemWrapper, ...this.props.itemStyle}}>
-        <div style={{...{color: option.color}, ...styles.labelTextOnly}}>
+      <div
+        style={{
+          ...styles.itemWrapper,
+          ...this.props.itemStyle,
+        }}
+      >
+        <div
+          style={{
+            ...{ color: option.color },
+            ...styles.labelTextOnly,
+          }}
+        >
           {option.label}
         </div>
       </div>
     );
   };
 
-
   // type 'colored-circle' rendering
-  renderColoredCircle = (option) => {
+  renderColoredCircle = option => {
     return (
-      <div style={{...styles.itemWrapper, ...this.props.itemStyle}}>
-        <div style={{...{backgroundColor: option.color}, ...styles.circle}} />
-        <div style={styles.labelColoredCircle}>{option.label}</div>
+      <div
+        style={{
+          ...styles.itemWrapper,
+          ...this.props.itemStyle,
+        }}
+      >
+        <div
+          style={{
+            ...{ backgroundColor: option.color },
+            ...styles.circle,
+          }}
+        />
+        <div style={styles.labelColoredCircle}>
+          {option.label}
+        </div>
       </div>
     );
   };
 
   // type 'icon' rendering
-  renderIcon = (option) => {
+  renderIcon = option => {
     return (
-      <div style={{...styles.itemWrapper, ...this.props.itemStyle}}>
+      <div
+        style={{
+          ...styles.itemWrapper,
+          ...this.props.itemStyle,
+        }}
+      >
         <Icon
           color={option.iconColor}
           icon={option.icon}
@@ -212,9 +258,14 @@ class Select extends Component {
   };
 
   // type 'image' rendering
-  renderImage = (option) => {
+  renderImage = option => {
     return (
-      <div style={{...styles.itemWrapper, ...this.props.itemStyle}}>
+      <div
+        style={{
+          ...styles.itemWrapper,
+          ...this.props.itemStyle,
+        }}
+      >
         <Thumb
           color={this.props.fallbackIconBg}
           height={30}
@@ -230,9 +281,14 @@ class Select extends Component {
     );
   };
 
-  renderImageValue = (option) => {
+  renderImageValue = option => {
     return (
-      <div style={{...styles.itemWrapper, ...this.props.itemStyle}}>
+      <div
+        style={{
+          ...styles.itemWrapper,
+          ...this.props.itemStyle,
+        }}
+      >
         <Thumb
           color={this.props.fallbackIconBg}
           height={20}

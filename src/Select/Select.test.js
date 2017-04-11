@@ -2,7 +2,8 @@
 import React from 'react';
 import { shallow, render, mount } from 'enzyme';
 import Select from './Select';
-import { Groups,
+import {
+  Groups,
   Apps,
   Categories,
   fontWeight,
@@ -13,14 +14,11 @@ import { Groups,
   Types,
 } from '../../data/SelectItems';
 
-const handler = (value) => console.log('🐳', value); // eslint-disable-line no-console
+const handler = value => console.log('🐳', value); // eslint-disable-line no-console
 
 it('renders correctly', () => {
   const wrapper = mount(
-    <Select
-      onUpdate={handler}
-      options={Groups}
-    />
+    <Select onUpdate={handler} options={Groups} />,
   );
 
   expect(wrapper).toMatchSnapshot();
@@ -34,7 +32,7 @@ it('renders multi selected', () => {
       options={Tags}
       simpleValue={true}
       value={['important', 'warning']}
-    />
+    />,
   );
 
   expect(wrapper).toMatchSnapshot();
@@ -48,7 +46,7 @@ it('renders colored type', () => {
       placeholder={'Filter by status'}
       type={'colored'}
       value={'published'}
-    />
+    />,
   );
 
   expect(wrapper).toMatchSnapshot();
@@ -62,7 +60,7 @@ it('renders colored-circle type', () => {
       placeholder={'Filter by category'}
       type={'colored-circle'}
       value={'session'}
-    />
+    />,
   );
 
   expect(wrapper).toMatchSnapshot();
@@ -76,7 +74,7 @@ it('renders image type', () => {
       placeholder={'Select app'}
       type={'image'}
       value={'id2'}
-    />
+    />,
   );
 
   expect(wrapper).toMatchSnapshot();
@@ -90,7 +88,7 @@ it('renders icon type', () => {
       placeholder={'Filter by note type'}
       type={'icon'}
       value={'Tickets'}
-    />
+    />,
   );
 
   expect(wrapper).toMatchSnapshot();
@@ -105,7 +103,7 @@ it('renders value-styled type', () => {
       styledProperty={'textTransform'}
       type={'value-styled'}
       value={'uppercase'}
-    />
+    />,
   );
 
   expect(wrapper).toMatchSnapshot();
@@ -122,7 +120,7 @@ it('renders with fallback icon', () => {
       placeholder={'Select person'}
       type={'image'}
       value={'id3'}
-    />
+    />,
   );
 
   expect(wrapper).toMatchSnapshot();
@@ -131,14 +129,14 @@ it('renders with fallback icon', () => {
 it('renders with custom item styles', () => {
   const wrapper = mount(
     <Select
-      itemStyle={{fontFamily: 'Roboto'}}
+      itemStyle={{ fontFamily: 'Roboto' }}
       onUpdate={handler}
       options={fontWeight}
       placeholder={'Weight'}
       styledProperty={'fontWeight'}
       type={'value-styled'}
       value={'700'}
-    />
+    />,
   );
 
   expect(wrapper).toMatchSnapshot();

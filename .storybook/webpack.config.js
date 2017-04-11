@@ -8,7 +8,8 @@ const config = {
         loaders: ['style', 'css'],
         include: path.resolve(__dirname, '../'),
       },
-      { test: /\.json$/,
+      {
+        test: /\.json$/,
         loader: 'json',
         include: path.resolve(__dirname, '../'),
       },
