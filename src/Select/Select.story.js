@@ -15,9 +15,9 @@ import {
 
 const handler = value => console.log('🐳', value); // eslint-disable-line no-console
 
-const Wrapper = ({ children }) => (
-  <div style={{ margin: '25px 10px' }}>{children}</div>
-); // eslint-disable-line react/prop-types
+const Wrapper = (
+  { children }, // eslint-disable-line react/prop-types
+) => <div style={{ margin: '25px 10px' }}>{children}</div>;
 
 storiesOf('Select', module)
   .add('compare all', () => (
