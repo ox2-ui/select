@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import ReactSelect from 'react-select';
-import Icon from '@ox2/icon/Icon';
+import FontIcon from '@ox2/icon/FontIcon';
 import Thumb from '@ox2/ui/Thumb';
 import styled from 'styled-components';
 import {
@@ -247,7 +247,7 @@ class Select extends Component {
           ...this.props.itemStyle,
         }}
       >
-        <Icon
+        <FontIcon
           color={option.iconColor}
           icon={option.icon}
           size={this.props.iconSize || '18px'}
