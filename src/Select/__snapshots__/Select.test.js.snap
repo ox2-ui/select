@@ -754,24 +754,28 @@ exports[`renders icon type 1`] = `
       Object {
         "icon": "users2",
         "iconColor": "#3498DB",
+        "iconGroup": "linear",
         "label": "User",
         "value": "Tickets",
       },
       Object {
         "icon": "calendar-text",
         "iconColor": "#3498DB",
+        "iconGroup": "linear",
         "label": "Session",
         "value": "Sessions",
       },
       Object {
         "icon": "diamond4",
         "iconColor": "#3498DB",
+        "iconGroup": "linear",
         "label": "Sponsors & Exhibitors",
         "value": "Sponsors",
       },
       Object {
         "icon": "pencil3",
         "iconColor": "#3498DB",
+        "iconGroup": "linear",
         "label": "General",
         "value": "all",
       },
@@ -790,24 +794,28 @@ exports[`renders icon type 1`] = `
         Object {
           "icon": "users2",
           "iconColor": "#3498DB",
+          "iconGroup": "linear",
           "label": "User",
           "value": "Tickets",
         },
         Object {
           "icon": "calendar-text",
           "iconColor": "#3498DB",
+          "iconGroup": "linear",
           "label": "Session",
           "value": "Sessions",
         },
         Object {
           "icon": "diamond4",
           "iconColor": "#3498DB",
+          "iconGroup": "linear",
           "label": "Sponsors & Exhibitors",
           "value": "Sponsors",
         },
         Object {
           "icon": "pencil3",
           "iconColor": "#3498DB",
+          "iconGroup": "linear",
           "label": "General",
           "value": "all",
         },
@@ -857,24 +865,28 @@ exports[`renders icon type 1`] = `
           Object {
             "icon": "users2",
             "iconColor": "#3498DB",
+            "iconGroup": "linear",
             "label": "User",
             "value": "Tickets",
           },
           Object {
             "icon": "calendar-text",
             "iconColor": "#3498DB",
+            "iconGroup": "linear",
             "label": "Session",
             "value": "Sessions",
           },
           Object {
             "icon": "diamond4",
             "iconColor": "#3498DB",
+            "iconGroup": "linear",
             "label": "Sponsors & Exhibitors",
             "value": "Sponsors",
           },
           Object {
             "icon": "pencil3",
             "iconColor": "#3498DB",
+            "iconGroup": "linear",
             "label": "General",
             "value": "all",
           },
@@ -916,6 +928,7 @@ exports[`renders icon type 1`] = `
                 Object {
                   "icon": "users2",
                   "iconColor": "#3498DB",
+                  "iconGroup": "linear",
                   "label": "User",
                   "value": "Tickets",
                 }
@@ -938,13 +951,14 @@ exports[`renders icon type 1`] = `
                       }
                     }
                   >
-                    <Icon
+                    <FontIcon
                       color="#3498DB"
+                      group="linear"
                       icon="users2"
                       size="18px"
                     >
                       <span
-                        className="icon-users2"
+                        className="icon-linear:users2"
                         style={
                           Object {
                             "color": "#3498DB",
@@ -952,7 +966,7 @@ exports[`renders icon type 1`] = `
                           }
                         }
                       />
-                    </Icon>
+                    </FontIcon>
                     <div
                       style={
                         Object {
