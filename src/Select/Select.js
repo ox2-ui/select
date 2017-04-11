@@ -249,6 +249,7 @@ class Select extends Component {
       >
         <FontIcon
           color={option.iconColor}
+          group={option.iconGroup}
           icon={option.icon}
           size={this.props.iconSize || '18px'}
         />

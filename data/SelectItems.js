@@ -43,10 +43,10 @@ export const Categories = [
 ];
 
 export const Types = [
-  { label: 'User', value: 'Tickets', icon: 'users2', iconColor: '#3498DB' },
-  { label: 'Session', value: 'Sessions', icon: 'calendar-text', iconColor: '#3498DB' },
-  { label: 'Sponsors & Exhibitors', value: 'Sponsors', icon: 'diamond4', iconColor: '#3498DB' },
-  { label: 'General', value: 'all', icon: 'pencil3', iconColor: '#3498DB' },
+  { label: 'User', value: 'Tickets', iconGroup: 'linear', icon: 'users2', iconColor: '#3498DB' },
+  { label: 'Session', value: 'Sessions', iconGroup: 'linear', icon: 'calendar-text', iconColor: '#3498DB' },
+  { label: 'Sponsors & Exhibitors', value: 'Sponsors', iconGroup: 'linear', icon: 'diamond4', iconColor: '#3498DB' },
+  { label: 'General', value: 'all', iconGroup: 'linear', icon: 'pencil3', iconColor: '#3498DB' },
 ];
 
 export const Tags = [
