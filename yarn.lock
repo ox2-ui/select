@@ -103,6 +103,10 @@
     webpack-dev-middleware "^1.6.0"
     webpack-hot-middleware "^2.13.2"
 
+"@ox2/button-css@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@ox2/button-css/-/button-css-1.2.0.tgz#067ad99d27f495f7d44ee65db899f123ebf6ee74"
+
 "@ox2/button@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@ox2/button/-/button-1.0.0.tgz#111e4d9ca2eea56f8e467de6b059ec3db2f67a66"
@@ -111,6 +115,10 @@
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@ox2/colors/-/colors-0.0.1.tgz#bcdda3f8e24ccfdab5e93b276bb70860c496b43a"
 
+"@ox2/colors@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@ox2/colors/-/colors-0.0.2.tgz#8ad1742ad17fadfe9b7c414cbf01bf13f01601f2"
+
 "@ox2/css-font-roboto-condensed@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@ox2/css-font-roboto-condensed/-/css-font-roboto-condensed-3.0.0.tgz#a169571cd96cc7d141d26d3671d307c8fb59a477"
@@ -118,6 +126,26 @@
 "@ox2/css-font-roboto@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@ox2/css-font-roboto/-/css-font-roboto-1.0.0.tgz#6bb11e4ad99f081ce03eb8c3b5a77db8c387631d"
+
+"@ox2/css-icons-hq-modules@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@ox2/css-icons-hq-modules/-/css-icons-hq-modules-0.0.1.tgz#08eec373b2e62bce1a3951298210b29eee6c3147"
+
+"@ox2/css-icons-linear@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@ox2/css-icons-linear/-/css-icons-linear-0.0.1.tgz#dc39c96150c2b19d6b6a9a8182dfd7ad9c5bbf59"
+
+"@ox2/css-icons-material@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@ox2/css-icons-material/-/css-icons-material-0.0.1.tgz#924b7e73d5d4c785d383d85742a8d58a216f7018"
+
+"@ox2/css-icons-moon@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@ox2/css-icons-moon/-/css-icons-moon-0.0.1.tgz#64c9e802049ef693aef697c8d5df58849e0ddb3b"
+
+"@ox2/css-icons-ui@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@ox2/css-icons-ui/-/css-icons-ui-0.1.2.tgz#53ca27a7f73e832b4243384ddaefd27b0573ba21"
 
 "@ox2/icon@^1.0.0":
   version "1.0.0"
@@ -140,9 +168,13 @@
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@ox2/scroller/-/scroller-1.2.0.tgz#dc7160200512d2fe1a9a8171f2219dc58102baab"
 
-"@ox2/theming@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@ox2/theming/-/theming-1.0.0.tgz#832152a46090af02c35dee463224f062c4bbf00d"
+"@ox2/storybook-css-layout@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@ox2/storybook-css-layout/-/storybook-css-layout-1.0.1.tgz#a4362232a2b0f52d003e367cfd791aa9a345572e"
+
+"@ox2/theming@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@ox2/theming/-/theming-2.0.2.tgz#ca6fb8f0b9c050aa8a840e47451592c5d0db8855"
   dependencies:
     jss "^5.5.6"
 
@@ -159,13 +191,15 @@
     react-search-input "^0.10.4"
     styled-components "^1.4.3"
 
-"@tapfuse/css-icons-linear@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@tapfuse/css-icons-linear/-/css-icons-linear-1.4.0.tgz#bd817289d946ddbca2d430ad2a6c5c50e2a964ff"
+"@ox2/ycss@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@ox2/ycss/-/ycss-1.5.0.tgz#55c90ee817f84e293a04ce0699af79117db73366"
 
-"@tapfuse/theme-spark@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@tapfuse/theme-spark/-/theme-spark-1.0.0.tgz#81f0e4dda4cda7485eeb3e112c5a5d7a500a3199"
+"@tapfuse/theme-spark@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@tapfuse/theme-spark/-/theme-spark-1.1.0.tgz#3bbf41f9e8e375cee9dfc1eea5cd27963f3fd43f"
+  dependencies:
+    "@ox2/colors" "^0.0.2"
 
 "@tapfuse/ycss@^1.20.0":
   version "1.20.0"
