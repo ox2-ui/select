@@ -6,13 +6,22 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## 6.0.1 - 2017-06-27
+### Changed
+- 📦 upgrade package config v2
+
+## 6.0.0 - 2017-04-11
+### Changed
+- [Select] update icon type to accept icon group **BREAKING**
+- upgrade dependencies
+
 ## 5.1.1 - 2017-03-13
 ### Changed
-[npm] dependency update
+- upgrade dependencies
 
 ## 5.1.0 - 2017-03-13
 ### Added
-[Select, SelectField] hasError prop added to indicate form validation errors
+- [Select, SelectField] hasError prop added to indicate form validation errors
 
 ## 5.0.2 - 2017-03-11
 ### Added
