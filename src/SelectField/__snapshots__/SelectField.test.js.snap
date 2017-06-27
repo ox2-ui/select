@@ -21,7 +21,15 @@ exports[`renders correctly 1`] = `
   }
 >
   <Select
-    className="kCkuzH"
+    className="sc-bwzfXH jebJts"
+    fallbackIcon=""
+    fallbackIconBg=""
+    fallbackIconColor=""
+    hasError={false}
+    iconSize="18px"
+    itemStyle={Object {}}
+    multi={false}
+    offlineEnabled={false}
     onUpdate={[Function]}
     options={
       Array [
@@ -39,9 +47,21 @@ exports[`renders correctly 1`] = `
         },
       ]
     }
+    placeholder=""
+    styledProperty=""
+    type={null}
+    value=""
   >
     <Styled(Select)
-      className="kCkuzH"
+      className="sc-bwzfXH jebJts"
+      fallbackIcon=""
+      fallbackIconBg=""
+      fallbackIconColor=""
+      hasError={false}
+      iconSize="18px"
+      itemStyle={Object {}}
+      multi={false}
+      offlineEnabled={false}
       onChange={[Function]}
       onUpdate={[Function]}
       optionRenderer={[Function]}
@@ -61,6 +81,8 @@ exports[`renders correctly 1`] = `
           },
         ]
       }
+      placeholder=""
+      styledProperty=""
       value=""
       valueRenderer={[Function]}
     >
@@ -70,7 +92,7 @@ exports[`renders correctly 1`] = `
         autosize={true}
         backspaceRemoves={true}
         backspaceToRemoveMessage="Press backspace to remove {label}"
-        className="kCkuzH gVPyvI"
+        className="sc-bwzfXH jebJts sc-bdVaJa bQxNgu"
         clearAllText="Clear all"
         clearRenderer={[Function]}
         clearValueText="Clear value"
@@ -79,11 +101,17 @@ exports[`renders correctly 1`] = `
         delimiter=","
         disabled={false}
         escapeClearsValue={true}
+        fallbackIcon=""
+        fallbackIconBg=""
+        fallbackIconColor=""
         filterOptions={[Function]}
+        hasError={false}
+        iconSize="18px"
         ignoreAccents={true}
         ignoreCase={true}
         inputProps={Object {}}
         isLoading={false}
+        itemStyle={Object {}}
         joinValues={false}
         labelKey="label"
         matchPos="any"
@@ -92,11 +120,11 @@ exports[`renders correctly 1`] = `
         menuRenderer={[Function]}
         multi={false}
         noResultsText="No results found"
+        offlineEnabled={false}
         onBlurResetsInput={true}
         onChange={[Function]}
         onCloseResetsInput={true}
         onUpdate={[Function]}
-        openAfterFocus={false}
         optionComponent={[Function]}
         optionRenderer={[Function]}
         options={
@@ -116,11 +144,12 @@ exports[`renders correctly 1`] = `
           ]
         }
         pageSize={5}
-        placeholder="Select..."
+        placeholder=""
         required={false}
         scrollMenuIntoView={true}
         searchable={true}
         simpleValue={false}
+        styledProperty=""
         tabSelectsValue={true}
         value=""
         valueComponent={[Function]}
@@ -128,7 +157,7 @@ exports[`renders correctly 1`] = `
         valueRenderer={[Function]}
       >
         <div
-          className="Select kCkuzH gVPyvI Select--single is-searchable"
+          className="Select sc-bwzfXH jebJts sc-bdVaJa bQxNgu Select--single is-clearable is-searchable"
         >
           <div
             className="Select-control"
@@ -144,10 +173,8 @@ exports[`renders correctly 1`] = `
             >
               <div
                 className="Select-placeholder"
-              >
-                Select...
-              </div>
-              <AutosizeInput
+              />
+              <Component
                 aria-activedescendant="react-select-2--value"
                 aria-expanded="false"
                 aria-haspopup="false"
@@ -201,7 +228,25 @@ exports[`renders correctly 1`] = `
                     }
                   />
                 </div>
-              </AutosizeInput>
+              </Component>
+            </span>
+            <span
+              aria-label="Clear value"
+              className="Select-clear-zone"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              title="Clear value"
+            >
+              <span
+                className="Select-clear"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "&times;",
+                  }
+                }
+              />
             </span>
             <span
               className="Select-arrow-zone"

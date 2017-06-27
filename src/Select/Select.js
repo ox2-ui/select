@@ -1,7 +1,8 @@
-import React, { Component, PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import ReactSelect from 'react-select';
 import FontIcon from '@ox2/icon/FontIcon';
-import Thumb from '@ox2/ui/Thumb';
+import Thumb from '@ox2/thumb/Thumb';
 import styled from 'styled-components';
 import {
   neutral_dark,
@@ -39,7 +40,10 @@ const StyledSelect = styled(ReactSelect)`
   font-size: 15px;
 
   .Select-control {
-    border: ${props => props.hasError ? `2px solid ${critical}` : `1px solid ${neutral_faded}`};
+    border: ${props =>
+      props.hasError
+        ? `2px solid ${critical}`
+        : `1px solid ${neutral_faded}`};
   }
 
   &.Select--multi .Select-value {
@@ -53,7 +57,8 @@ const StyledSelect = styled(ReactSelect)`
     height: 32px;
   }
   &.is-focused:not(.is-open) > .Select-control {
-    border-color: ${props => props.hasError ? critical : neutral_dark};
+    border-color: ${props =>
+      props.hasError ? critical : neutral_dark};
     box-shadow: none;
   }
 
@@ -135,8 +140,24 @@ class Select extends Component {
     value: PropTypes.any,
   };
 
+  static defaultProps = {
+    className: '',
+    fallbackIcon: '',
+    fallbackIconBg: '',
+    fallbackIconColor: '',
+    hasError: false,
+    iconSize: '18px', // XXX Deprecate ?
+    itemStyle: {},
+    multi: false,
+    offlineEnabled: false,
+    placeholder: '',
+    styledProperty: '',
+    type: null,
+    value: '',
+  };
+
   state = {
-    value: this.props.value || '',
+    value: this.props.value,
   };
 
   componentWillReceiveProps = nextProps => {
@@ -251,7 +272,7 @@ class Select extends Component {
           color={option.iconColor}
           group={option.iconGroup}
           icon={option.icon}
-          size={this.props.iconSize || '18px'}
+          size={this.props.iconSize}
         />
         <div style={styles.label}>{option.label}</div>
       </div>

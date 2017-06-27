@@ -11,7 +11,8 @@ const SelectField = styled(Select)`
     border-right: none;
     border-top: none;
     border-radius: 0;
-    border-bottom-width: ${props => props.hasError ? '2px' : '1px'};
+    border-bottom-width: ${props =>
+      props.hasError ? '2px' : '1px'};
   }
 
   .Select-placeholder, &.Select--single > .Select-control .Select-value {

@@ -197,10 +197,10 @@
 ### Type: icon -- Single
 
     const Types = [
-      { label: 'User', value: 'Tickets', icon: 'users2', iconColor: '#3498DB' },
-      { label: 'Session', value: 'Sessions', icon: 'calendar-text', iconColor: '#3498DB' },
-      { label: 'Sponsors & Exhibitors', value: 'Sponsors', icon: 'diamond4', iconColor: '#3498DB' },
-      { label: 'General', value: 'all', icon: 'pencil3', iconColor: '#3498DB' },
+      { label: 'User', value: 'Tickets', iconGroup: 'linear', icon: 'users2', iconColor: '#3498DB' },
+      { label: 'Session', value: 'Sessions', iconGroup: 'linear', icon: 'calendar-text', iconColor: '#3498DB' },
+      { label: 'Sponsors & Exhibitors', value: 'Sponsors', iconGroup: 'linear', icon: 'diamond4', iconColor: '#3498DB' },
+      { label: 'General', value: 'all', iconGroup: 'linear', icon: 'pencil3', iconColor: '#3498DB' },
     ];
 
     const handleUpdate = (value) => console.log('🐳', value);
@@ -215,9 +215,10 @@
 ### Type: icon -- Multi
 
     const Types = [
-      { label: 'User', value: 'Tickets', icon: 'users2', iconColor: '#3498DB' },
-      { label: 'Session', value: 'Sessions', icon: 'calendar-text', iconColor: '#3498DB' },
-      { label: 'General', value: 'all', icon: 'pencil3', iconColor: '#3498DB' },
+      { label: 'User', value: 'Tickets', iconGroup: 'linear', icon: 'users2', iconColor: '#3498DB' },
+      { label: 'Session', value: 'Sessions', iconGroup: 'linear', icon: 'calendar-text', iconColor: '#3498DB' },
+      { label: 'Sponsors & Exhibitors', value: 'Sponsors', iconGroup: 'linear', icon: 'diamond4', iconColor: '#3498DB' },
+      { label: 'General', value: 'all', iconGroup: 'linear', icon: 'pencil3', iconColor: '#3498DB' },
     ];
 
     const handleUpdate = (value) => console.log('🐳', value);
@@ -231,21 +232,3 @@
       type={'icon'}
     />
 
-### Type: icon -- Large icon
-
-    const Types = [
-      { label: 'User', value: 'Tickets', icon: 'users2', iconColor: '#3498DB' },
-      { label: 'Session', value: 'Sessions', icon: 'calendar-text', iconColor: '#3498DB' },
-      { label: 'Sponsors & Exhibitors', value: 'Sponsors', icon: 'diamond4', iconColor: '#3498DB' },
-      { label: 'General', value: 'all', icon: 'pencil3', iconColor: '#3498DB' },
-    ];
-
-    const handleUpdate = (value) => console.log('🐳', value);
-
-    <Select
-      iconSize={'25px'}
-      onUpdate={handleUpdate}
-      options={Types}
-      placeholder={'Filter by note type'}
-      type={'icon'}
-    />

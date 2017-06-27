@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import Select from './Select';
 import {
   Groups,
@@ -20,7 +20,7 @@ const Wrapper = (
 ) => <div style={{ margin: '25px 10px' }}>{children}</div>;
 
 storiesOf('Select', module)
-  .add('compare all', () => (
+  .add('compare all', () =>
     <div>
       <Wrapper>
         <Select onUpdate={handler} options={Groups} />
@@ -164,60 +164,60 @@ storiesOf('Select', module)
           value={['Tickets', 'Sessions']}
         />
       </Wrapper>
-    </div>
-  ))
-  .add('single', () => (
-    <Select onUpdate={handler} options={Groups} />
-  ))
-  .add('selected', () => (
+    </div>,
+  )
+  .add('single', () =>
+    <Select onUpdate={handler} options={Groups} />,
+  )
+  .add('selected', () =>
     <Select
       onUpdate={handler}
       options={Groups}
       value={'attendies'}
-    />
-  ))
-  .add('with error', () => (
+    />,
+  )
+  .add('with error', () =>
     <Select
       hasError={true}
       onUpdate={handler}
       options={Groups}
-    />
-  ))
-  .add('multi', () => (
+    />,
+  )
+  .add('multi', () =>
     <Select
       multi={true}
       onUpdate={handler}
       options={Tags}
       simpleValue={true}
-    />
-  ))
-  .add('multi selected', () => (
+    />,
+  )
+  .add('multi selected', () =>
     <Select
       multi={true}
       onUpdate={handler}
       options={Tags}
       simpleValue={true}
       value={['important', 'warning']}
-    />
-  ))
-  .add('disable clear', () => (
+    />,
+  )
+  .add('disable clear', () =>
     <Select
       clearable={false}
       onUpdate={handler}
       options={Groups}
       value={'attendies'}
-    />
-  ))
-  .add('type: value-styled', () => (
+    />,
+  )
+  .add('type: value-styled', () =>
     <Select
       onUpdate={handler}
       options={textTransform}
       placeholder={'Text transform'}
       styledProperty={'textTransform'}
       type={'value-styled'}
-    />
-  ))
-  .add('type: value-styled - selected', () => (
+    />,
+  )
+  .add('type: value-styled - selected', () =>
     <Select
       onUpdate={handler}
       options={textTransform}
@@ -225,9 +225,9 @@ storiesOf('Select', module)
       styledProperty={'textTransform'}
       type={'value-styled'}
       value={'uppercase'}
-    />
-  ))
-  .add('type: value-styled 2', () => (
+    />,
+  )
+  .add('type: value-styled 2', () =>
     <Select
       itemStyle={{ fontFamily: 'Roboto' }}
       onUpdate={handler}
@@ -235,9 +235,9 @@ storiesOf('Select', module)
       placeholder={'Weight'}
       styledProperty={'fontWeight'}
       type={'value-styled'}
-    />
-  ))
-  .add('type: value-styled 2 - selected', () => (
+    />,
+  )
+  .add('type: value-styled 2 - selected', () =>
     <Select
       itemStyle={{ fontFamily: 'Roboto' }}
       onUpdate={handler}
@@ -246,26 +246,26 @@ storiesOf('Select', module)
       styledProperty={'fontWeight'}
       type={'value-styled'}
       value={'700'}
-    />
-  ))
-  .add('type: colored', () => (
+    />,
+  )
+  .add('type: colored', () =>
     <Select
       onUpdate={handler}
       options={StatusLabels}
       placeholder={'Filter by status'}
       type={'colored'}
-    />
-  ))
-  .add('type: colored - selected', () => (
+    />,
+  )
+  .add('type: colored - selected', () =>
     <Select
       onUpdate={handler}
       options={StatusLabels}
       placeholder={'Filter by status'}
       type={'colored'}
       value={'published'}
-    />
-  ))
-  .add('type: colored multi', () => (
+    />,
+  )
+  .add('type: colored multi', () =>
     <Select
       multi={true}
       onUpdate={handler}
@@ -273,9 +273,9 @@ storiesOf('Select', module)
       placeholder={'Filter by status'}
       simpleValue={true}
       type={'colored'}
-    />
-  ))
-  .add('type: colored multi - selected', () => (
+    />,
+  )
+  .add('type: colored multi - selected', () =>
     <Select
       multi={true}
       onUpdate={handler}
@@ -284,26 +284,26 @@ storiesOf('Select', module)
       simpleValue={true}
       type={'colored'}
       value={['rejected', 'published']}
-    />
-  ))
-  .add('type: colored-circle', () => (
+    />,
+  )
+  .add('type: colored-circle', () =>
     <Select
       onUpdate={handler}
       options={Categories}
       placeholder={'Filter by category'}
       type={'colored-circle'}
-    />
-  ))
-  .add('type: colored-circle - selected', () => (
+    />,
+  )
+  .add('type: colored-circle - selected', () =>
     <Select
       onUpdate={handler}
       options={Categories}
       placeholder={'Filter by category'}
       type={'colored-circle'}
       value={'session'}
-    />
-  ))
-  .add('type: colored-circle multi', () => (
+    />,
+  )
+  .add('type: colored-circle multi', () =>
     <Select
       multi={true}
       onUpdate={handler}
@@ -311,9 +311,9 @@ storiesOf('Select', module)
       placeholder={'Filter by category'}
       simpleValue={true}
       type={'colored-circle'}
-    />
-  ))
-  .add('type: colored-circle multi - selected', () => (
+    />,
+  )
+  .add('type: colored-circle multi - selected', () =>
     <Select
       multi={true}
       onUpdate={handler}
@@ -322,26 +322,26 @@ storiesOf('Select', module)
       simpleValue={true}
       type={'colored-circle'}
       value={['break', 'workshop']}
-    />
-  ))
-  .add('type: image', () => (
+    />,
+  )
+  .add('type: image', () =>
     <Select
       onUpdate={handler}
       options={Apps}
       placeholder={'Select app'}
       type={'image'}
-    />
-  ))
-  .add('type: image - selected', () => (
+    />,
+  )
+  .add('type: image - selected', () =>
     <Select
       onUpdate={handler}
       options={Apps}
       placeholder={'Select app'}
       type={'image'}
       value={'id2'}
-    />
-  ))
-  .add('type: image multi', () => (
+    />,
+  )
+  .add('type: image multi', () =>
     <Select
       multi={true}
       onUpdate={handler}
@@ -349,9 +349,9 @@ storiesOf('Select', module)
       placeholder={'Select app'}
       simpleValue={true}
       type={'image'}
-    />
-  ))
-  .add('type: image multi - selected', () => (
+    />,
+  )
+  .add('type: image multi - selected', () =>
     <Select
       multi={true}
       onUpdate={handler}
@@ -360,9 +360,9 @@ storiesOf('Select', module)
       simpleValue={true}
       type={'image'}
       value={['id1', 'id2']}
-    />
-  ))
-  .add('type: image 2', () => (
+    />,
+  )
+  .add('type: image 2', () =>
     <Select
       fallbackIcon={'user'}
       fallbackIconBg={'neutral'}
@@ -372,9 +372,9 @@ storiesOf('Select', module)
       options={People}
       placeholder={'Select person'}
       type={'image'}
-    />
-  ))
-  .add('type: image 2 multi', () => (
+    />,
+  )
+  .add('type: image 2 multi', () =>
     <Select
       fallbackIcon={'user'}
       fallbackIconBg={'neutral'}
@@ -386,9 +386,9 @@ storiesOf('Select', module)
       placeholder={'Select person'}
       simpleValue={true}
       type={'image'}
-    />
-  ))
-  .add('type: image 2 multi - selected', () => (
+    />,
+  )
+  .add('type: image 2 multi - selected', () =>
     <Select
       fallbackIcon={'user'}
       fallbackIconBg={'neutral'}
@@ -401,26 +401,26 @@ storiesOf('Select', module)
       simpleValue={true}
       type={'image'}
       value={['id1', 'id3', 'id2']}
-    />
-  ))
-  .add('type: icon', () => (
+    />,
+  )
+  .add('type: icon', () =>
     <Select
       onUpdate={handler}
       options={Types}
       placeholder={'Filter by note type'}
       type={'icon'}
-    />
-  ))
-  .add('type: icon - selected', () => (
+    />,
+  )
+  .add('type: icon - selected', () =>
     <Select
       onUpdate={handler}
       options={Types}
       placeholder={'Filter by note type'}
       type={'icon'}
       value={'Tickets'}
-    />
-  ))
-  .add('type: icon multi', () => (
+    />,
+  )
+  .add('type: icon multi', () =>
     <Select
       multi={true}
       onUpdate={handler}
@@ -428,9 +428,9 @@ storiesOf('Select', module)
       placeholder={'Filter by note type'}
       simpleValue={true}
       type={'icon'}
-    />
-  ))
-  .add('type: icon multi - selected', () => (
+    />,
+  )
+  .add('type: icon multi - selected', () =>
     <Select
       multi={true}
       onUpdate={handler}
@@ -439,5 +439,5 @@ storiesOf('Select', module)
       simpleValue={true}
       type={'icon'}
       value={['Tickets', 'Sessions']}
-    />
-  ));
+    />,
+  );

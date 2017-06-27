@@ -2,6 +2,15 @@
 
 exports[`renders colored type 1`] = `
 <Select
+  className=""
+  fallbackIcon=""
+  fallbackIconBg=""
+  fallbackIconColor=""
+  hasError={false}
+  iconSize="18px"
+  itemStyle={Object {}}
+  multi={false}
+  offlineEnabled={false}
   onUpdate={[Function]}
   options={
     Array [
@@ -23,10 +32,20 @@ exports[`renders colored type 1`] = `
     ]
   }
   placeholder="Filter by status"
+  styledProperty=""
   type="colored"
   value="published"
 >
   <Styled(Select)
+    className=""
+    fallbackIcon=""
+    fallbackIconBg=""
+    fallbackIconColor=""
+    hasError={false}
+    iconSize="18px"
+    itemStyle={Object {}}
+    multi={false}
+    offlineEnabled={false}
     onChange={[Function]}
     onUpdate={[Function]}
     optionRenderer={[Function]}
@@ -50,6 +69,7 @@ exports[`renders colored type 1`] = `
       ]
     }
     placeholder="Filter by status"
+    styledProperty=""
     value="published"
     valueRenderer={[Function]}
   >
@@ -59,7 +79,7 @@ exports[`renders colored type 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="gVPyvI"
+      className="sc-bdVaJa bQxNgu"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -68,11 +88,17 @@ exports[`renders colored type 1`] = `
       delimiter=","
       disabled={false}
       escapeClearsValue={true}
+      fallbackIcon=""
+      fallbackIconBg=""
+      fallbackIconColor=""
       filterOptions={[Function]}
+      hasError={false}
+      iconSize="18px"
       ignoreAccents={true}
       ignoreCase={true}
       inputProps={Object {}}
       isLoading={false}
+      itemStyle={Object {}}
       joinValues={false}
       labelKey="label"
       matchPos="any"
@@ -81,11 +107,11 @@ exports[`renders colored type 1`] = `
       menuRenderer={[Function]}
       multi={false}
       noResultsText="No results found"
+      offlineEnabled={false}
       onBlurResetsInput={true}
       onChange={[Function]}
       onCloseResetsInput={true}
       onUpdate={[Function]}
-      openAfterFocus={false}
       optionComponent={[Function]}
       optionRenderer={[Function]}
       options={
@@ -113,6 +139,7 @@ exports[`renders colored type 1`] = `
       scrollMenuIntoView={true}
       searchable={true}
       simpleValue={false}
+      styledProperty=""
       tabSelectsValue={true}
       value="published"
       valueComponent={[Function]}
@@ -120,7 +147,7 @@ exports[`renders colored type 1`] = `
       valueRenderer={[Function]}
     >
       <div
-        className="Select gVPyvI Select--single is-searchable has-value"
+        className="Select sc-bdVaJa bQxNgu Select--single is-clearable is-searchable has-value"
       >
         <div
           className="Select-control"
@@ -178,7 +205,7 @@ exports[`renders colored type 1`] = `
                 </span>
               </div>
             </Value>
-            <AutosizeInput
+            <Component
               aria-activedescendant="react-select-4--value"
               aria-expanded="false"
               aria-haspopup="false"
@@ -232,7 +259,7 @@ exports[`renders colored type 1`] = `
                   }
                 />
               </div>
-            </AutosizeInput>
+            </Component>
           </span>
           <span
             aria-label="Clear value"
@@ -270,6 +297,15 @@ exports[`renders colored type 1`] = `
 
 exports[`renders colored-circle type 1`] = `
 <Select
+  className=""
+  fallbackIcon=""
+  fallbackIconBg=""
+  fallbackIconColor=""
+  hasError={false}
+  iconSize="18px"
+  itemStyle={Object {}}
+  multi={false}
+  offlineEnabled={false}
   onUpdate={[Function]}
   options={
     Array [
@@ -291,10 +327,20 @@ exports[`renders colored-circle type 1`] = `
     ]
   }
   placeholder="Filter by category"
+  styledProperty=""
   type="colored-circle"
   value="session"
 >
   <Styled(Select)
+    className=""
+    fallbackIcon=""
+    fallbackIconBg=""
+    fallbackIconColor=""
+    hasError={false}
+    iconSize="18px"
+    itemStyle={Object {}}
+    multi={false}
+    offlineEnabled={false}
     onChange={[Function]}
     onUpdate={[Function]}
     optionRenderer={[Function]}
@@ -318,6 +364,7 @@ exports[`renders colored-circle type 1`] = `
       ]
     }
     placeholder="Filter by category"
+    styledProperty=""
     value="session"
     valueRenderer={[Function]}
   >
@@ -327,7 +374,7 @@ exports[`renders colored-circle type 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="gVPyvI"
+      className="sc-bdVaJa bQxNgu"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -336,11 +383,17 @@ exports[`renders colored-circle type 1`] = `
       delimiter=","
       disabled={false}
       escapeClearsValue={true}
+      fallbackIcon=""
+      fallbackIconBg=""
+      fallbackIconColor=""
       filterOptions={[Function]}
+      hasError={false}
+      iconSize="18px"
       ignoreAccents={true}
       ignoreCase={true}
       inputProps={Object {}}
       isLoading={false}
+      itemStyle={Object {}}
       joinValues={false}
       labelKey="label"
       matchPos="any"
@@ -349,11 +402,11 @@ exports[`renders colored-circle type 1`] = `
       menuRenderer={[Function]}
       multi={false}
       noResultsText="No results found"
+      offlineEnabled={false}
       onBlurResetsInput={true}
       onChange={[Function]}
       onCloseResetsInput={true}
       onUpdate={[Function]}
-      openAfterFocus={false}
       optionComponent={[Function]}
       optionRenderer={[Function]}
       options={
@@ -381,6 +434,7 @@ exports[`renders colored-circle type 1`] = `
       scrollMenuIntoView={true}
       searchable={true}
       simpleValue={false}
+      styledProperty=""
       tabSelectsValue={true}
       value="session"
       valueComponent={[Function]}
@@ -388,7 +442,7 @@ exports[`renders colored-circle type 1`] = `
       valueRenderer={[Function]}
     >
       <div
-        className="Select gVPyvI Select--single is-searchable has-value"
+        className="Select sc-bdVaJa bQxNgu Select--single is-clearable is-searchable has-value"
       >
         <div
           className="Select-control"
@@ -458,7 +512,7 @@ exports[`renders colored-circle type 1`] = `
                 </span>
               </div>
             </Value>
-            <AutosizeInput
+            <Component
               aria-activedescendant="react-select-5--value"
               aria-expanded="false"
               aria-haspopup="false"
@@ -512,7 +566,7 @@ exports[`renders colored-circle type 1`] = `
                   }
                 />
               </div>
-            </AutosizeInput>
+            </Component>
           </span>
           <span
             aria-label="Clear value"
@@ -550,6 +604,15 @@ exports[`renders colored-circle type 1`] = `
 
 exports[`renders correctly 1`] = `
 <Select
+  className=""
+  fallbackIcon=""
+  fallbackIconBg=""
+  fallbackIconColor=""
+  hasError={false}
+  iconSize="18px"
+  itemStyle={Object {}}
+  multi={false}
+  offlineEnabled={false}
   onUpdate={[Function]}
   options={
     Array [
@@ -567,8 +630,21 @@ exports[`renders correctly 1`] = `
       },
     ]
   }
+  placeholder=""
+  styledProperty=""
+  type={null}
+  value=""
 >
   <Styled(Select)
+    className=""
+    fallbackIcon=""
+    fallbackIconBg=""
+    fallbackIconColor=""
+    hasError={false}
+    iconSize="18px"
+    itemStyle={Object {}}
+    multi={false}
+    offlineEnabled={false}
     onChange={[Function]}
     onUpdate={[Function]}
     optionRenderer={[Function]}
@@ -588,6 +664,8 @@ exports[`renders correctly 1`] = `
         },
       ]
     }
+    placeholder=""
+    styledProperty=""
     value=""
     valueRenderer={[Function]}
   >
@@ -597,7 +675,7 @@ exports[`renders correctly 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="gVPyvI"
+      className="sc-bdVaJa bQxNgu"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -606,11 +684,17 @@ exports[`renders correctly 1`] = `
       delimiter=","
       disabled={false}
       escapeClearsValue={true}
+      fallbackIcon=""
+      fallbackIconBg=""
+      fallbackIconColor=""
       filterOptions={[Function]}
+      hasError={false}
+      iconSize="18px"
       ignoreAccents={true}
       ignoreCase={true}
       inputProps={Object {}}
       isLoading={false}
+      itemStyle={Object {}}
       joinValues={false}
       labelKey="label"
       matchPos="any"
@@ -619,11 +703,11 @@ exports[`renders correctly 1`] = `
       menuRenderer={[Function]}
       multi={false}
       noResultsText="No results found"
+      offlineEnabled={false}
       onBlurResetsInput={true}
       onChange={[Function]}
       onCloseResetsInput={true}
       onUpdate={[Function]}
-      openAfterFocus={false}
       optionComponent={[Function]}
       optionRenderer={[Function]}
       options={
@@ -643,11 +727,12 @@ exports[`renders correctly 1`] = `
         ]
       }
       pageSize={5}
-      placeholder="Select..."
+      placeholder=""
       required={false}
       scrollMenuIntoView={true}
       searchable={true}
       simpleValue={false}
+      styledProperty=""
       tabSelectsValue={true}
       value=""
       valueComponent={[Function]}
@@ -655,7 +740,7 @@ exports[`renders correctly 1`] = `
       valueRenderer={[Function]}
     >
       <div
-        className="Select gVPyvI Select--single is-searchable"
+        className="Select sc-bdVaJa bQxNgu Select--single is-clearable is-searchable"
       >
         <div
           className="Select-control"
@@ -671,10 +756,8 @@ exports[`renders correctly 1`] = `
           >
             <div
               className="Select-placeholder"
-            >
-              Select...
-            </div>
-            <AutosizeInput
+            />
+            <Component
               aria-activedescendant="react-select-2--value"
               aria-expanded="false"
               aria-haspopup="false"
@@ -728,7 +811,25 @@ exports[`renders correctly 1`] = `
                   }
                 />
               </div>
-            </AutosizeInput>
+            </Component>
+          </span>
+          <span
+            aria-label="Clear value"
+            className="Select-clear-zone"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            title="Clear value"
+          >
+            <span
+              className="Select-clear"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "&times;",
+                }
+              }
+            />
           </span>
           <span
             className="Select-arrow-zone"
@@ -748,6 +849,15 @@ exports[`renders correctly 1`] = `
 
 exports[`renders icon type 1`] = `
 <Select
+  className=""
+  fallbackIcon=""
+  fallbackIconBg=""
+  fallbackIconColor=""
+  hasError={false}
+  iconSize="18px"
+  itemStyle={Object {}}
+  multi={false}
+  offlineEnabled={false}
   onUpdate={[Function]}
   options={
     Array [
@@ -782,10 +892,20 @@ exports[`renders icon type 1`] = `
     ]
   }
   placeholder="Filter by note type"
+  styledProperty=""
   type="icon"
   value="Tickets"
 >
   <Styled(Select)
+    className=""
+    fallbackIcon=""
+    fallbackIconBg=""
+    fallbackIconColor=""
+    hasError={false}
+    iconSize="18px"
+    itemStyle={Object {}}
+    multi={false}
+    offlineEnabled={false}
     onChange={[Function]}
     onUpdate={[Function]}
     optionRenderer={[Function]}
@@ -822,6 +942,7 @@ exports[`renders icon type 1`] = `
       ]
     }
     placeholder="Filter by note type"
+    styledProperty=""
     value="Tickets"
     valueRenderer={[Function]}
   >
@@ -831,7 +952,7 @@ exports[`renders icon type 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="gVPyvI"
+      className="sc-bdVaJa bQxNgu"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -840,11 +961,17 @@ exports[`renders icon type 1`] = `
       delimiter=","
       disabled={false}
       escapeClearsValue={true}
+      fallbackIcon=""
+      fallbackIconBg=""
+      fallbackIconColor=""
       filterOptions={[Function]}
+      hasError={false}
+      iconSize="18px"
       ignoreAccents={true}
       ignoreCase={true}
       inputProps={Object {}}
       isLoading={false}
+      itemStyle={Object {}}
       joinValues={false}
       labelKey="label"
       matchPos="any"
@@ -853,11 +980,11 @@ exports[`renders icon type 1`] = `
       menuRenderer={[Function]}
       multi={false}
       noResultsText="No results found"
+      offlineEnabled={false}
       onBlurResetsInput={true}
       onChange={[Function]}
       onCloseResetsInput={true}
       onUpdate={[Function]}
-      openAfterFocus={false}
       optionComponent={[Function]}
       optionRenderer={[Function]}
       options={
@@ -898,6 +1025,7 @@ exports[`renders icon type 1`] = `
       scrollMenuIntoView={true}
       searchable={true}
       simpleValue={false}
+      styledProperty=""
       tabSelectsValue={true}
       value="Tickets"
       valueComponent={[Function]}
@@ -905,7 +1033,7 @@ exports[`renders icon type 1`] = `
       valueRenderer={[Function]}
     >
       <div
-        className="Select gVPyvI Select--single is-searchable has-value"
+        className="Select sc-bdVaJa bQxNgu Select--single is-clearable is-searchable has-value"
       >
         <div
           className="Select-control"
@@ -952,10 +1080,12 @@ exports[`renders icon type 1`] = `
                     }
                   >
                     <FontIcon
+                      className=""
                       color="#3498DB"
                       group="linear"
                       icon="users2"
                       size="18px"
+                      style={Object {}}
                     >
                       <span
                         className="icon-linear:users2"
@@ -981,7 +1111,7 @@ exports[`renders icon type 1`] = `
                 </span>
               </div>
             </Value>
-            <AutosizeInput
+            <Component
               aria-activedescendant="react-select-7--value"
               aria-expanded="false"
               aria-haspopup="false"
@@ -1035,7 +1165,7 @@ exports[`renders icon type 1`] = `
                   }
                 />
               </div>
-            </AutosizeInput>
+            </Component>
           </span>
           <span
             aria-label="Clear value"
@@ -1073,6 +1203,15 @@ exports[`renders icon type 1`] = `
 
 exports[`renders image type 1`] = `
 <Select
+  className=""
+  fallbackIcon=""
+  fallbackIconBg=""
+  fallbackIconColor=""
+  hasError={false}
+  iconSize="18px"
+  itemStyle={Object {}}
+  multi={false}
+  offlineEnabled={false}
   onUpdate={[Function]}
   options={
     Array [
@@ -1094,10 +1233,20 @@ exports[`renders image type 1`] = `
     ]
   }
   placeholder="Select app"
+  styledProperty=""
   type="image"
   value="id2"
 >
   <Styled(Select)
+    className=""
+    fallbackIcon=""
+    fallbackIconBg=""
+    fallbackIconColor=""
+    hasError={false}
+    iconSize="18px"
+    itemStyle={Object {}}
+    multi={false}
+    offlineEnabled={false}
     onChange={[Function]}
     onUpdate={[Function]}
     optionRenderer={[Function]}
@@ -1121,6 +1270,7 @@ exports[`renders image type 1`] = `
       ]
     }
     placeholder="Select app"
+    styledProperty=""
     value="id2"
     valueRenderer={[Function]}
   >
@@ -1130,7 +1280,7 @@ exports[`renders image type 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="gVPyvI"
+      className="sc-bdVaJa bQxNgu"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -1139,11 +1289,17 @@ exports[`renders image type 1`] = `
       delimiter=","
       disabled={false}
       escapeClearsValue={true}
+      fallbackIcon=""
+      fallbackIconBg=""
+      fallbackIconColor=""
       filterOptions={[Function]}
+      hasError={false}
+      iconSize="18px"
       ignoreAccents={true}
       ignoreCase={true}
       inputProps={Object {}}
       isLoading={false}
+      itemStyle={Object {}}
       joinValues={false}
       labelKey="label"
       matchPos="any"
@@ -1152,11 +1308,11 @@ exports[`renders image type 1`] = `
       menuRenderer={[Function]}
       multi={false}
       noResultsText="No results found"
+      offlineEnabled={false}
       onBlurResetsInput={true}
       onChange={[Function]}
       onCloseResetsInput={true}
       onUpdate={[Function]}
-      openAfterFocus={false}
       optionComponent={[Function]}
       optionRenderer={[Function]}
       options={
@@ -1184,6 +1340,7 @@ exports[`renders image type 1`] = `
       scrollMenuIntoView={true}
       searchable={true}
       simpleValue={false}
+      styledProperty=""
       tabSelectsValue={true}
       value="id2"
       valueComponent={[Function]}
@@ -1191,7 +1348,7 @@ exports[`renders image type 1`] = `
       valueRenderer={[Function]}
     >
       <div
-        className="Select gVPyvI Select--single is-searchable has-value"
+        className="Select sc-bdVaJa bQxNgu Select--single is-clearable is-searchable has-value"
       >
         <div
           className="Select-control"
@@ -1236,12 +1393,19 @@ exports[`renders image type 1`] = `
                     }
                   >
                     <Thumb
+                      className=""
+                      color=""
                       height={20}
+                      icon=""
+                      iconColor=""
+                      iconGroup=""
                       image="http://imgur.com/AN63ghL.png"
+                      localImg=""
+                      offlineEnabled={false}
                       width={20}
                     >
                       <div
-                        className="display:flex flex:items-center flex:content-center border:rounded color:transparent"
+                        className="display:flex flex:items-center flex:content-center border:rounded color:"
                         style={
                           Object {
                             "WebkitFlex": "0 0 20px",
@@ -1271,7 +1435,7 @@ exports[`renders image type 1`] = `
                 </span>
               </div>
             </Value>
-            <AutosizeInput
+            <Component
               aria-activedescendant="react-select-6--value"
               aria-expanded="false"
               aria-haspopup="false"
@@ -1325,7 +1489,7 @@ exports[`renders image type 1`] = `
                   }
                 />
               </div>
-            </AutosizeInput>
+            </Component>
           </span>
           <span
             aria-label="Clear value"
@@ -1363,7 +1527,15 @@ exports[`renders image type 1`] = `
 
 exports[`renders multi selected 1`] = `
 <Select
+  className=""
+  fallbackIcon=""
+  fallbackIconBg=""
+  fallbackIconColor=""
+  hasError={false}
+  iconSize="18px"
+  itemStyle={Object {}}
   multi={true}
+  offlineEnabled={false}
   onUpdate={[Function]}
   options={
     Array [
@@ -1393,7 +1565,10 @@ exports[`renders multi selected 1`] = `
       },
     ]
   }
+  placeholder=""
   simpleValue={true}
+  styledProperty=""
+  type={null}
   value={
     Array [
       "important",
@@ -1402,7 +1577,15 @@ exports[`renders multi selected 1`] = `
   }
 >
   <Styled(Select)
+    className=""
+    fallbackIcon=""
+    fallbackIconBg=""
+    fallbackIconColor=""
+    hasError={false}
+    iconSize="18px"
+    itemStyle={Object {}}
     multi={true}
+    offlineEnabled={false}
     onChange={[Function]}
     onUpdate={[Function]}
     optionRenderer={[Function]}
@@ -1434,7 +1617,9 @@ exports[`renders multi selected 1`] = `
         },
       ]
     }
+    placeholder=""
     simpleValue={true}
+    styledProperty=""
     value={
       Array [
         "important",
@@ -1449,7 +1634,7 @@ exports[`renders multi selected 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="gVPyvI"
+      className="sc-bdVaJa bQxNgu"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -1458,11 +1643,17 @@ exports[`renders multi selected 1`] = `
       delimiter=","
       disabled={false}
       escapeClearsValue={true}
+      fallbackIcon=""
+      fallbackIconBg=""
+      fallbackIconColor=""
       filterOptions={[Function]}
+      hasError={false}
+      iconSize="18px"
       ignoreAccents={true}
       ignoreCase={true}
       inputProps={Object {}}
       isLoading={false}
+      itemStyle={Object {}}
       joinValues={false}
       labelKey="label"
       matchPos="any"
@@ -1471,11 +1662,11 @@ exports[`renders multi selected 1`] = `
       menuRenderer={[Function]}
       multi={true}
       noResultsText="No results found"
+      offlineEnabled={false}
       onBlurResetsInput={true}
       onChange={[Function]}
       onCloseResetsInput={true}
       onUpdate={[Function]}
-      openAfterFocus={false}
       optionComponent={[Function]}
       optionRenderer={[Function]}
       options={
@@ -1507,11 +1698,12 @@ exports[`renders multi selected 1`] = `
         ]
       }
       pageSize={5}
-      placeholder="Select..."
+      placeholder=""
       required={false}
       scrollMenuIntoView={true}
       searchable={true}
       simpleValue={true}
+      styledProperty=""
       tabSelectsValue={true}
       value={
         Array [
@@ -1524,7 +1716,7 @@ exports[`renders multi selected 1`] = `
       valueRenderer={[Function]}
     >
       <div
-        className="Select gVPyvI Select--multi is-searchable has-value"
+        className="Select sc-bdVaJa bQxNgu Select--multi is-clearable is-searchable has-value"
       >
         <div
           className="Select-control"
@@ -1654,7 +1846,7 @@ exports[`renders multi selected 1`] = `
                 </span>
               </div>
             </Value>
-            <AutosizeInput
+            <Component
               aria-activedescendant="react-select-3--value"
               aria-expanded="false"
               aria-haspopup="false"
@@ -1708,7 +1900,7 @@ exports[`renders multi selected 1`] = `
                   }
                 />
               </div>
-            </AutosizeInput>
+            </Component>
           </span>
           <span
             aria-label="Clear all"
@@ -1746,6 +1938,15 @@ exports[`renders multi selected 1`] = `
 
 exports[`renders value-styled type 1`] = `
 <Select
+  className=""
+  fallbackIcon=""
+  fallbackIconBg=""
+  fallbackIconColor=""
+  hasError={false}
+  iconSize="18px"
+  itemStyle={Object {}}
+  multi={false}
+  offlineEnabled={false}
   onUpdate={[Function]}
   options={
     Array [
@@ -1773,6 +1974,15 @@ exports[`renders value-styled type 1`] = `
   value="uppercase"
 >
   <Styled(Select)
+    className=""
+    fallbackIcon=""
+    fallbackIconBg=""
+    fallbackIconColor=""
+    hasError={false}
+    iconSize="18px"
+    itemStyle={Object {}}
+    multi={false}
+    offlineEnabled={false}
     onChange={[Function]}
     onUpdate={[Function]}
     optionRenderer={[Function]}
@@ -1807,7 +2017,7 @@ exports[`renders value-styled type 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="gVPyvI"
+      className="sc-bdVaJa bQxNgu"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -1816,11 +2026,17 @@ exports[`renders value-styled type 1`] = `
       delimiter=","
       disabled={false}
       escapeClearsValue={true}
+      fallbackIcon=""
+      fallbackIconBg=""
+      fallbackIconColor=""
       filterOptions={[Function]}
+      hasError={false}
+      iconSize="18px"
       ignoreAccents={true}
       ignoreCase={true}
       inputProps={Object {}}
       isLoading={false}
+      itemStyle={Object {}}
       joinValues={false}
       labelKey="label"
       matchPos="any"
@@ -1829,11 +2045,11 @@ exports[`renders value-styled type 1`] = `
       menuRenderer={[Function]}
       multi={false}
       noResultsText="No results found"
+      offlineEnabled={false}
       onBlurResetsInput={true}
       onChange={[Function]}
       onCloseResetsInput={true}
       onUpdate={[Function]}
-      openAfterFocus={false}
       optionComponent={[Function]}
       optionRenderer={[Function]}
       options={
@@ -1870,7 +2086,7 @@ exports[`renders value-styled type 1`] = `
       valueRenderer={[Function]}
     >
       <div
-        className="Select gVPyvI Select--single is-searchable has-value"
+        className="Select sc-bdVaJa bQxNgu Select--single is-clearable is-searchable has-value"
       >
         <div
           className="Select-control"
@@ -1927,7 +2143,7 @@ exports[`renders value-styled type 1`] = `
                 </span>
               </div>
             </Value>
-            <AutosizeInput
+            <Component
               aria-activedescendant="react-select-8--value"
               aria-expanded="false"
               aria-haspopup="false"
@@ -1981,7 +2197,7 @@ exports[`renders value-styled type 1`] = `
                   }
                 />
               </div>
-            </AutosizeInput>
+            </Component>
           </span>
           <span
             aria-label="Clear value"
@@ -2019,11 +2235,19 @@ exports[`renders value-styled type 1`] = `
 
 exports[`renders with custom item styles 1`] = `
 <Select
+  className=""
+  fallbackIcon=""
+  fallbackIconBg=""
+  fallbackIconColor=""
+  hasError={false}
+  iconSize="18px"
   itemStyle={
     Object {
       "fontFamily": "Roboto",
     }
   }
+  multi={false}
+  offlineEnabled={false}
   onUpdate={[Function]}
   options={
     Array [
@@ -2047,11 +2271,19 @@ exports[`renders with custom item styles 1`] = `
   value="700"
 >
   <Styled(Select)
+    className=""
+    fallbackIcon=""
+    fallbackIconBg=""
+    fallbackIconColor=""
+    hasError={false}
+    iconSize="18px"
     itemStyle={
       Object {
         "fontFamily": "Roboto",
       }
     }
+    multi={false}
+    offlineEnabled={false}
     onChange={[Function]}
     onUpdate={[Function]}
     optionRenderer={[Function]}
@@ -2082,7 +2314,7 @@ exports[`renders with custom item styles 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="gVPyvI"
+      className="sc-bdVaJa bQxNgu"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -2091,7 +2323,12 @@ exports[`renders with custom item styles 1`] = `
       delimiter=","
       disabled={false}
       escapeClearsValue={true}
+      fallbackIcon=""
+      fallbackIconBg=""
+      fallbackIconColor=""
       filterOptions={[Function]}
+      hasError={false}
+      iconSize="18px"
       ignoreAccents={true}
       ignoreCase={true}
       inputProps={Object {}}
@@ -2109,11 +2346,11 @@ exports[`renders with custom item styles 1`] = `
       menuRenderer={[Function]}
       multi={false}
       noResultsText="No results found"
+      offlineEnabled={false}
       onBlurResetsInput={true}
       onChange={[Function]}
       onCloseResetsInput={true}
       onUpdate={[Function]}
-      openAfterFocus={false}
       optionComponent={[Function]}
       optionRenderer={[Function]}
       options={
@@ -2146,7 +2383,7 @@ exports[`renders with custom item styles 1`] = `
       valueRenderer={[Function]}
     >
       <div
-        className="Select gVPyvI Select--single is-searchable has-value"
+        className="Select sc-bdVaJa bQxNgu Select--single is-clearable is-searchable has-value"
       >
         <div
           className="Select-control"
@@ -2204,7 +2441,7 @@ exports[`renders with custom item styles 1`] = `
                 </span>
               </div>
             </Value>
-            <AutosizeInput
+            <Component
               aria-activedescendant="react-select-10--value"
               aria-expanded="false"
               aria-haspopup="false"
@@ -2258,7 +2495,7 @@ exports[`renders with custom item styles 1`] = `
                   }
                 />
               </div>
-            </AutosizeInput>
+            </Component>
           </span>
           <span
             aria-label="Clear value"
@@ -2296,9 +2533,15 @@ exports[`renders with custom item styles 1`] = `
 
 exports[`renders with fallback icon 1`] = `
 <Select
+  className=""
   fallbackIcon="user"
   fallbackIconBg="neutral"
   fallbackIconColor="white"
+  hasError={false}
+  iconSize="18px"
+  itemStyle={Object {}}
+  multi={false}
+  offlineEnabled={false}
   onUpdate={[Function]}
   options={
     Array [
@@ -2326,13 +2569,20 @@ exports[`renders with fallback icon 1`] = `
     ]
   }
   placeholder="Select person"
+  styledProperty=""
   type="image"
   value="id3"
 >
   <Styled(Select)
+    className=""
     fallbackIcon="user"
     fallbackIconBg="neutral"
     fallbackIconColor="white"
+    hasError={false}
+    iconSize="18px"
+    itemStyle={Object {}}
+    multi={false}
+    offlineEnabled={false}
     onChange={[Function]}
     onUpdate={[Function]}
     optionRenderer={[Function]}
@@ -2362,6 +2612,7 @@ exports[`renders with fallback icon 1`] = `
       ]
     }
     placeholder="Select person"
+    styledProperty=""
     value="id3"
     valueRenderer={[Function]}
   >
@@ -2371,7 +2622,7 @@ exports[`renders with fallback icon 1`] = `
       autosize={true}
       backspaceRemoves={true}
       backspaceToRemoveMessage="Press backspace to remove {label}"
-      className="gVPyvI"
+      className="sc-bdVaJa bQxNgu"
       clearAllText="Clear all"
       clearRenderer={[Function]}
       clearValueText="Clear value"
@@ -2384,10 +2635,13 @@ exports[`renders with fallback icon 1`] = `
       fallbackIconBg="neutral"
       fallbackIconColor="white"
       filterOptions={[Function]}
+      hasError={false}
+      iconSize="18px"
       ignoreAccents={true}
       ignoreCase={true}
       inputProps={Object {}}
       isLoading={false}
+      itemStyle={Object {}}
       joinValues={false}
       labelKey="label"
       matchPos="any"
@@ -2396,11 +2650,11 @@ exports[`renders with fallback icon 1`] = `
       menuRenderer={[Function]}
       multi={false}
       noResultsText="No results found"
+      offlineEnabled={false}
       onBlurResetsInput={true}
       onChange={[Function]}
       onCloseResetsInput={true}
       onUpdate={[Function]}
-      openAfterFocus={false}
       optionComponent={[Function]}
       optionRenderer={[Function]}
       options={
@@ -2434,6 +2688,7 @@ exports[`renders with fallback icon 1`] = `
       scrollMenuIntoView={true}
       searchable={true}
       simpleValue={false}
+      styledProperty=""
       tabSelectsValue={true}
       value="id3"
       valueComponent={[Function]}
@@ -2441,7 +2696,7 @@ exports[`renders with fallback icon 1`] = `
       valueRenderer={[Function]}
     >
       <div
-        className="Select gVPyvI Select--single is-searchable has-value"
+        className="Select sc-bdVaJa bQxNgu Select--single is-clearable is-searchable has-value"
       >
         <div
           className="Select-control"
@@ -2486,11 +2741,15 @@ exports[`renders with fallback icon 1`] = `
                     }
                   >
                     <Thumb
+                      className=""
                       color="neutral"
                       height={20}
                       icon="user"
                       iconColor="white"
+                      iconGroup=""
                       image=""
+                      localImg=""
+                      offlineEnabled={false}
                       width={20}
                     >
                       <div
@@ -2504,21 +2763,24 @@ exports[`renders with fallback icon 1`] = `
                           }
                         }
                       >
-                        <Icon
+                        <FontIcon
                           className="text-color:white"
+                          color=""
+                          group=""
                           icon="user"
                           size="14px"
+                          style={Object {}}
                         >
                           <span
-                            className="icon-user text-color:white"
+                            className="icon-:user text-color:white"
                             style={
                               Object {
-                                "color": undefined,
+                                "color": "",
                                 "fontSize": "14px",
                               }
                             }
                           />
-                        </Icon>
+                        </FontIcon>
                       </div>
                     </Thumb>
                     <div
@@ -2535,7 +2797,7 @@ exports[`renders with fallback icon 1`] = `
                 </span>
               </div>
             </Value>
-            <AutosizeInput
+            <Component
               aria-activedescendant="react-select-9--value"
               aria-expanded="false"
               aria-haspopup="false"
@@ -2589,7 +2851,7 @@ exports[`renders with fallback icon 1`] = `
                   }
                 />
               </div>
-            </AutosizeInput>
+            </Component>
           </span>
           <span
             aria-label="Clear value"

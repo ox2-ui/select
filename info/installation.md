@@ -1,4 +1,3 @@
-## Installation
 Install using [npm](http://npmjs.com):
 ```sh
 npm install @ox2/select --save

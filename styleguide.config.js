@@ -1,60 +1,64 @@
 const path = require('path');
-const glob = require('glob');
 
 module.exports = {
   title: '@ox2/select',
-  template: './docs/src/template.html',
   serverPort: 55012,
   styleguideDir: './docs',
-  updateWebpackConfig: webpackConfig => {
-    webpackConfig.module.loaders.push(
-      {
-        test: [/\.js$/],
-        include: path.join(__dirname, 'src'),
-        exclude: /node_modules/,
-        loader: 'babel',
-      },
-      {
-        test: /\.css$/,
-        include: path.join(__dirname, './node_modules/react-select'),
-        loaders: ['style', 'css'],
-      },
-      {
-        test: /\.css$/,
-        include: path.join(__dirname, './node_modules/@tapfuse'),
-        loaders: ['style', 'css'],
-      }
-    );
-    webpackConfig.entry.push(path.join(__dirname, 'node_modules/react-select/dist/react-select.css'));
-    webpackConfig.entry.push(path.join(__dirname, 'node_modules/@tapfuse/css-icons-linear/index.css'));
-    return webpackConfig;
+  skipComponentsWithoutExample: true,
+  webpackConfig: {
+    module: {
+      loaders: [
+        {
+          test: /\.js?$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['env'],
+              plugins: [
+                require('babel-plugin-transform-class-properties'),
+                require('babel-plugin-transform-do-expressions'),
+                require('babel-plugin-transform-export-extensions'),
+                require('babel-plugin-transform-object-rest-spread'),
+              ],
+            },
+          },
+        },
+        {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader'],
+        },
+      ],
+    },
   },
+  require: [
+    '@ox2/css-font-roboto',
+    '@ox2/css-font-roboto-condensed',
+    '@ox2/css-icons-linear',
+    '@ox2/ycss',
+    'react-select/dist/react-select.css',
+  ],
   sections: [
     {
       name: 'Get Started',
       sections: [
         {
           name: 'About',
-          content: './docs/src/introduction.md',
+          content: './info/introduction.md',
         },
         {
           name: 'Installation',
-          content: './docs/src/installation.md',
+          content: './info/installation.md',
         },
         {
           name: 'Usage',
-          content: './docs/src/usage.md',
+          content: './info/usage.md',
         },
       ],
     },
     {
       name: 'Components',
-      components() {
-        return glob.sync(path.resolve(__dirname, 'src/**/*.js'))
-          .filter( module => {
-            return /\/[A-Z]\w*\.js$/.test(module);
-          });
-      },
+      components: 'src/**/[A-Z]*.js',
     },
     {
       name: 'History',
@@ -65,10 +69,12 @@ module.exports = {
       content: './LICENSE',
     },
   ],
-  getExampleFilename: componentpath => componentpath.replace(/\.js$/, '.examples.md'),
+  getExampleFilename: componentpath =>
+    componentpath.replace(/\.js$/, '.examples.md'),
   getComponentPathLine: componentPath => {
     const name = path.basename(componentPath, '.js');
-    const dir = path.dirname(componentPath.replace(/src\//i, ''));
+    const componentPathFixed = componentPath.replace(/src\//i, '');
+    const dir = path.dirname(componentPathFixed);
     return `import ${name} from '@ox2/select/${dir}';`;
   },
 };
