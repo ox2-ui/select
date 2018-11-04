@@ -1,3 +1,5 @@
+### Package is no longer maintaned.
+
 # @ox2/select
 ![NPM version](https://img.shields.io/badge/npm-private-orange.svg?style=flat)
 <!-- ![NPM version](https://img.shields.io/npm/v/@ox2/select.svg?style=flat) -->
@@ -38,3 +40,5 @@ Changes are tracked in the [CHANGELOG.md](https://github.com/ox2/select/blob/mas
 
 ## License
 [MIT](https://github.com/ox2/select/blob/master/LICENSE)
+
+
